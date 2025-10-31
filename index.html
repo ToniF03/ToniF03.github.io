@@ -1,189 +1,220 @@
-
 <!DOCTYPE html>
 <html>
-      <head>
-        <meta charset="UTF-8">
-	       <title>ToniF03 - Projects with love</title>
-	       <meta name="description" content="">
-	       <meta name="author" content="ToniF03">
-	       <meta name="keywords" content="">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
-         <link rel="stylesheet" href="app.css">
-         <script src="app.js"></script>
-      </head>
 
-    <style>
-        @media(max-width: 550px) {
-          #principles td, #social td {
-            display: table-row;
-          }
-        }
+<head>
+  <meta charset="UTF-8">
+  <title>ToniF03 - Projects with love</title>
+  <meta name="description" content="">
+  <meta name="author" content="ToniF03">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="app.js"></script>
+</head>
 
-        .middle h1 {
-            font-family: 'Roboto';
-            font-weight: 300;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 0px;
-        }
+<style>
+  @media(max-width: 550px) {
 
-        #slider {
-            background-image: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b');
-            width:100%;
-            height:280px;
-            background-position: center;
-            background-size: cover;
-        }
+    #principles td,
+    #social td {
+      display: table-row;
+    }
+  }
 
-        #principles {
-          display: flex;
-          width: 90%;
-          align-content: center;
-        }
+  .middle h1 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
 
-        #navbar li .Tab  {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            cursor: hand;
-        }
+  #slider {
+    background-image: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b');
+    width: 100%;
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+  }
 
-        #navbar li #ActiveTab  {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            background-color: #4CAF50;
-        }
+  #principles {
+    display: flex;
+    width: 90%;
+    align-content: center;
+  }
 
-        a {
-            font-family: 'Roboto';
-            text-decoration: none;
-        }
+  #navbar li .Tab {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: hand;
+  }
 
-        #socialmedia:hover {
-            color: #00AA55;
-            cursor:pointer;
-        }
+  #navbar li #ActiveTab {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #4CAF50;
+  }
 
-        #social {
-            background-color: #282B2D;
-            padding-bottom: 0.5%;
-            margin-top: 40px;
-        }
+  a {
+    font-family: 'Roboto';
+    text-decoration: none;
+  }
 
-        #social td {
-          font-size: 105%;
-        }
+  #socialmedia:hover {
+    color: #00AA55;
+    cursor: pointer;
+  }
 
-        #about-me {
-          margin-top: 100px;
-          margin-bottom: 100px;
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-    </style>
+  #social {
+    background-color: #282B2D;
+    padding-bottom: 0.5%;
+    margin-top: 40px;
+  }
 
-    <body onload="document.getElementById('age').innerHTML = String(new Date(Date.now() - new Date(2003, 12, 10)).getUTCFullYear() - 1970);">
+  #social td {
+    font-size: 105%;
+  }
 
-      <div id="slider"></div>
-      <div id="navbar" class="header">
-        <ul>
-          <li><a id="ActiveTab" href="/">Home</a></li>
-          <li class="tab">
-          <li><a href="/projects/calcify/" class="tab">Projects</a></li>
-          <li class="right-tab"><a class="tab" onclick="window.scrollTo({top: document.getElementById('about-me').offsetTop, behavior: 'smooth'});">About</a></li>
-        </ul>
-      </div>
+  #about-me {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
 
-<!-- ######################################################################################### -->
+<body
+  onload="document.getElementById('age').innerHTML = String(new Date(Date.now() - new Date(2003, 12, 10)).getUTCFullYear() - 1970);">
 
-<div class="middle">
-  <h1 style="text-align:center; margin-top: 30px"> Projects made with <i id="heart" class="fa fa-heart" ></i></h1>
-  
-  <table id="principles" align="center">
-    <tr>
-      <td width=50% style="vertical-align: top;">
-        <h1><i class="fab fa-github" style="margin-right: 7px;"></i> Open Source&nbsp;<i class="fa fa-link" id="open-source" onclick="linkToSection(this)"></i></h1>
-        <div style="margin-left: 50px; margin-right: 30px;">
-          <a>I want to create programs that are free for everyone. The code is accessible on </a>
-          <a target="_blank" style="color: #6060BF; text-decoration: none; font-weight: 600;" href="https://github.com/ToniF03">GitHub.</a>
-          <a> And if you like my projects, consider to leave a follow. You can also support me when you </a>
-          <a target="_blank" href="https://buymeacoffee.com/tonif03" style="color: #6060BF; text-decoration: none; font-weight: 600;">buy me a coffee.</a>
-        </div>
-      </td>
-      
-      <td width=50% style="vertical-align: top;">
-        <h1><i class="fa fa-comments" style="margin-right: 7px;"></i> Contact&nbsp;<i class="fa fa-link" id="contact" onclick="linkToSection(this)"></i></h1>
-        <div style="margin-left: 50px; margin-right: 30px;">
-          <a>Communication is one of the most important things, also for me! You have a problem, a bug or just want to ask something? Contact me on </a>
-          <a target="_blank" style="color: #6060BF; text-decoration: none; font-weight: 600;" href="https://linkedin.com/in/toni-fey-28a672226">LinkedIn.</a>
-              </div>
-            </td>
-          </tr>
-          
-          <tr>
-            <td width=50% style="vertical-align: top;">
-              <h1><i class="fa fa-book" style="margin-right: 7px;"></i> Documentation&nbsp;<i class="fa fa-link" id="documentation" onclick="linkToSection(this)"></i></h1>
-              <div style="margin-left: 50px; margin-right: 30px;">
-                <a>My well-structured and easy-to-understand documentations contain all the important information you need to use my program successfully. Whether you are new or used to my programs, the documentations are well structured so that anyone can understand them.</a><br>
-                <a></a>
-              </div>
-            </td>
-            
-            <td width=50% style="vertical-align: top;">
-              <h1><i class="fa fa-user" style="margin-right: 7px;"></i> Accessibility&nbsp;<i class="fa fa-link" id="accessibility" onclick="linkToSection(this)"></i></h1>
-              <div style="margin-left: 50px; margin-right: 30px;">
-                <a>My programs aim to have an easy accessibility. We connect simplicity with functionality to achieve the best experience for the user.</a>
-              </div>
-            </td>
-          </tr>
-        </table>
-        
-        <div id="about-me">
-          <h1>About me...</h1>
+  <div id="slider"></div>
+  <div id="navbar" class="header">
+    <ul>
+      <li><a id="ActiveTab" href="/">Home</a></li>
+      <li class="tab">
+      <li><a href="/projects/calcify/" class="tab">Projects</a></li>
+      <li class="right-tab"><a class="tab"
+          onclick="window.scrollTo({top: document.getElementById('about-me').offsetTop, behavior: 'smooth'});">About</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ######################################################################################### -->
+
+  <div class="middle">
+    <h1 style="text-align:center; margin-top: 30px"> Projects made with <i id="heart" class="fa fa-heart"></i></h1>
+
+    <table id="principles" align="center">
+      <tr>
+        <td width=50% style="vertical-align: top;">
+          <h1><i class="fab fa-github" style="margin-right: 7px;"></i> Open Source&nbsp;<i class="fa fa-link"
+              id="open-source" onclick="linkToSection(this)"></i></h1>
           <div style="margin-left: 50px; margin-right: 30px;">
-            <p style="line-height: 150%;">Hi, I am Toni, the developer of this website and of all programs, code snippets and tools made by ToniF03.
-              I am <a id="age"></a> years old, and have been interested in programming since I was 11. I first began learning to code when I was in middle school, and I've been hooked ever since. Furthermore, I love the challenge of solving problems and creating new things using code, and I'm constantly learning and growing as a developer. My experience and skill set have grown from that first time when I started to play with some basic scripts and has advanced over time, now I am more confident and capable. Currently, I am doing my Bachelor of Science in Computer Science and can not wait to do more interesting projects.</p>
-            </div>
+            <a>I want to create programs that are free for everyone. The code is accessible on </a>
+            <a target="_blank" style="color: #6060BF; text-decoration: none; font-weight: 600;"
+              href="https://github.com/ToniF03">GitHub.</a>
+            <a> And if you like my projects, consider to leave a follow. You can also support me when you </a>
+            <a target="_blank" href="https://buymeacoffee.com/tonif03"
+              style="color: #6060BF; text-decoration: none; font-weight: 600;">buy me a coffee.</a>
           </div>
-        </div>
-        <!-- ######################################################################################### -->
+        </td>
 
-      <div id="social" width=100% height=200 align=center >
-        <br><br>
-        <a onclick="window.scrollTo({top: 0, behavior: 'smooth'});" style="align-content: right;" ><i style="text-align: right;" class="fa fa-chevron-up" id="socialmedia" ></i></a>
-        <br>
-        <table width=90%>
-          <tr>
-            <td style="width: 30%; padding-bottom: 10px;">Social Media:</td>
-            <td style="width: 30%; padding-bottom: 10px;">Projects:</td>
-            <td style="width: 30%; padding-bottom: 10px;"></td>
-          </tr>
+        <td width=50% style="vertical-align: top;">
+          <h1><i class="fa fa-comments" style="margin-right: 7px;"></i> Contact&nbsp;<i class="fa fa-link" id="contact"
+              onclick="linkToSection(this)"></i></h1>
+          <div style="margin-left: 50px; margin-right: 30px;">
+            <a>Communication is one of the most important things, also for me! You have a problem, a bug or just want to
+              ask something? Contact me on </a>
+            <a target="_blank" style="color: #6060BF; text-decoration: none; font-weight: 600;"
+              href="https://linkedin.com/in/toni-fey-28a672226">LinkedIn.</a>
+          </div>
+        </td>
+      </tr>
 
-          <tr>
-            <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="https://github.com/ToniF03" id="socialmedia">GitHub</a></td>
-            <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="/prod/calcify/" id="socialmedia">Calcify</a></td>
-          </tr>
+      <tr>
+        <td width=50% style="vertical-align: top;">
+          <h1><i class="fa fa-book" style="margin-right: 7px;"></i> Documentation&nbsp;<i class="fa fa-link"
+              id="documentation" onclick="linkToSection(this)"></i></h1>
+          <div style="margin-left: 50px; margin-right: 30px;">
+            <a>My well-structured and easy-to-understand documentations contain all the important information you need
+              to use my program successfully. Whether you are new or used to my programs, the documentations are well
+              structured so that anyone can understand them.</a><br>
+            <a></a>
+          </div>
+        </td>
 
-          <tr>
-            <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="https://linkedin.com/in/toni-fey-28a672226" id="socialmedia">LinkedIn</a></td>
-          </tr>
+        <td width=50% style="vertical-align: top;">
+          <h1><i class="fa fa-user" style="margin-right: 7px;"></i> Accessibility&nbsp;<i class="fa fa-link"
+              id="accessibility" onclick="linkToSection(this)"></i></h1>
+          <div style="margin-left: 50px; margin-right: 30px;">
+            <a>My programs aim to have an easy accessibility. We connect simplicity with functionality to achieve the
+              best experience for the user.</a>
+          </div>
+        </td>
+      </tr>
+    </table>
 
-          <tr>
-            <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="https://www.buymeacoffee.com/tonif03" id="socialmedia">Buy me a coffee</a></td>
-          </tr>
-        </table>
-
-
-        <br>
-        <br><br><br><br><br><br>
-        <a style="font-size: 70%"><i class="fa fa-camera"></i> Slider Picture by <a id="socialmedia" href="https://unsplash.com/de/@lucabravo" target="_blank" style="font-size: 70%;">Luca Bravo</a> from <a id="socialmedia" href="https://unsplash.com/de/fotos/grauer-laptop-computer-eingeschaltet-XJXWbfSo2f0" style="font-size: 70%" target="_blank">Unsplash</a></a>
+    <div id="about-me">
+      <h1>About me...</h1>
+      <div style="margin-left: 50px; margin-right: 30px;">
+        <p style="line-height: 150%;">Hi, I am Toni, the developer of this website and of all programs, code snippets
+          and tools made by ToniF03.
+          I am <a id="age"></a> years old, and have been interested in programming since I was 11. I first began
+          learning to code when I was in middle school, and I've been hooked ever since. Furthermore, I love the
+          challenge of solving problems and creating new things using code, and I'm constantly learning and growing as a
+          developer. My experience and skill set have grown from that first time when I started to play with some basic
+          scripts and has advanced over time, now I am more confident and capable. Currently, I am doing my Bachelor of
+          Science in Computer Science and can not wait to do more interesting projects.</p>
       </div>
-    </body>
+    </div>
+  </div>
+  <!-- ######################################################################################### -->
+
+  <div id="social" width=100% height=200 align=center>
+    <br><br>
+    <a onclick="window.scrollTo({top: 0, behavior: 'smooth'});" style="align-content: right;"><i
+        style="text-align: right;" class="fa fa-chevron-up" id="socialmedia"></i></a>
+    <br>
+    <table width=90%>
+      <tr>
+        <td style="width: 30%; padding-bottom: 10px;">Social Media:</td>
+        <td style="width: 30%; padding-bottom: 10px;">Projects:</td>
+        <td style="width: 30%; padding-bottom: 10px;"></td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="https://github.com/ToniF03"
+            id="socialmedia">GitHub</a></td>
+        <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="/prod/calcify/"
+            id="socialmedia">Calcify</a></td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank"
+            href="https://linkedin.com/in/toni-fey-28a672226" id="socialmedia">LinkedIn</a></td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank"
+            href="https://www.buymeacoffee.com/tonif03" id="socialmedia">Buy me a coffee</a></td>
+      </tr>
+    </table>
+
+
+    <br>
+    <br><br><br><br><br><br>
+    <a style="font-size: 70%"><i class="fa fa-camera"></i> Slider Picture by <a id="socialmedia"
+        href="https://unsplash.com/de/@lucabravo" target="_blank" style="font-size: 70%;">Luca Bravo</a> from <a
+        id="socialmedia" href="https://unsplash.com/de/fotos/grauer-laptop-computer-eingeschaltet-XJXWbfSo2f0"
+        style="font-size: 70%" target="_blank">Unsplash</a></a>
+  </div>
+</body>
+
 </html>

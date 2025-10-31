@@ -1,5 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:100,400');
 
+@media(max-width: 550px) {
+
+    #principles td,
+    #social td {
+        display: table-row;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-fg-color: #C0BAB2;
+        --main-bg-color: #202020;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --main-fg-color: #1e1e1e;
+        --main-bg-color: #fff;
+    }
+}
+
+@keyframes lovehover {
+    from {
+        color: var(--main-fg-color);
+    }
+
+    to {
+        color: darkred;
+    }
+}
+
+@keyframes love {
+    from {
+        color: darkred;
+    }
+
+    to {
+        color: var(--main-fg-color);
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -68,38 +110,4 @@ td {
     animation-name: lovehover;
     animation-duration: 0.25s;
     color: darkred;
-}
-
-@keyframes lovehover {
-    from {
-        color: var(--main-fg-color);
-    }
-
-    to {
-        color: darkred;
-    }
-}
-
-@keyframes love {
-    from {
-        color: darkred;
-    }
-
-    to {
-        color: var(--main-fg-color);
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --main-fg-color: #C0BAB2;
-        --main-bg-color: #202020;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --main-fg-color: #1e1e1e;
-        --main-bg-color: #fff;
-    }
 }

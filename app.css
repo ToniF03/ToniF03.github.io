@@ -97,7 +97,7 @@ td {
 }
 
 .fa-link:hover {
-    color: var(--main-bg-color);
+    color: var(--main-fg-color);
 }
 
 #heart {

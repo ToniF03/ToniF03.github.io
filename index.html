@@ -9,81 +9,15 @@
 	       <meta name="keywords" content="">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+         <link rel="stylesheet" href="app.css">
+         <script src="app.js"></script>
       </head>
 
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:100,400');
-
-        @media (prefers-color-scheme: dark) {
-          body {
-            background-color: #202020;
-          }
-
-          h1, i, p, a, td {
-            color: #C0BAB2;
-          }
-
-          #heart {
-            animation-name: love;
-            animation-duration: 0.5s;
-            color: #C0BAB2;
-          } 
-
-          #heart:hover {
-            animation-name: lovehover;
-            animation-duration: 0.5s;
-            color:darkred;
-          }
-
-          @keyframes lovehover {
-            from {color: #C0BAB2;}
-            to {color: darkred;}
-          }
-
-          @keyframes love {
-            from {color: darkred;}
-            to {color: #C0BAB2;}
-          }
-        }
-
-        @media (prefers-color-scheme: light) {
-
-          #heart {
-            animation-name: love;
-            animation-duration: 0.5s;
-            color:black;
-          }
-
-          #heart:hover {
-            animation-name: lovehover;
-            animation-duration: 0.5s;
-            color:darkred;
-          }
-
-          @keyframes lovehover {
-            from {color: black;}
-            to {color: darkred;}
-          }
-
-          @keyframes love {
-            from {color: darkred;}
-            to {color: black;}
-          }
-        }
-
         @media(max-width: 550px) {
           #principles td, #social td {
             display: table-row;
           }
-        }
-
-        html {
-          scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Roboto';
         }
 
         .middle h1 {
@@ -106,42 +40,6 @@
           display: flex;
           width: 90%;
           align-content: center;
-        }
-
-        #navbar ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        #navbar {
-          background-color: #333;
-          overflow: hidden;
-        }
-
-        .sticky {
-          position: fixed;
-          top: 0;
-          width: 100%;
-        }
-
-        #navbar li #unactiveTab {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          background-color: #333333;
-        }
-
-        #navbar li #unactiveTab:hover {
-          background-color: #414141;
-        }
-
-        #navbar li {
-            float: left;
         }
 
         #navbar li .Tab  {
@@ -182,7 +80,7 @@
           font-size: 105%;
         }
 
-        #about {
+        #about-me {
           margin-top: 100px;
           margin-bottom: 100px;
           width: 90%;
@@ -194,64 +92,68 @@
     <body onload="document.getElementById('age').innerHTML = String(new Date(Date.now() - new Date(2003, 12, 10)).getUTCFullYear() - 1970);">
 
       <div id="slider"></div>
-      <div id="navbar" class="header" class="sticky">
+      <div id="navbar" class="header">
         <ul>
           <li><a id="ActiveTab" href="/">Home</a></li>
           <li class="tab">
-          <li><a id="unactiveTab" href="/prod/calcify/" class="tab">Projects</a></li>
-          <li style="float: right"><a id="unactiveTab" onclick="window.scrollTo({top: document.getElementById('about').offsetTop, behavior: 'smooth'});">About</a></li>
+          <li><a href="/projects/calcify/" class="tab">Projects</a></li>
+          <li class="right-tab"><a class="tab" onclick="window.scrollTo({top: document.getElementById('about-me').offsetTop, behavior: 'smooth'});">About</a></li>
         </ul>
       </div>
 
-      <div class="middle">
-        <h1 style="text-align:center; margin-top: 30px"> Projects made with <i id="heart" class="fa fa-heart" ></i></h1>
+<!-- ######################################################################################### -->
 
-        <table id="principles" align="center">
-          <tr>
-            <td width=50% style="vertical-align: top;">
-              <h1><i class="fab fa-github" style="margin-right: 7px;"></i> Open Source</h1>
-              <div style="margin-left: 50px; margin-right: 30px;">
-                <a>We want to create programs that are free for everyone. The code is accessible on </a>
-                <a target="_blank" style="color: #6060BF; text-decoration: none; font-weight: 600;" href="https://github.com/ToniF03">GitHub.</a>
-                <a> And if you like my projects, consider to leave a follow. You can also support me when you </a>
-                <a target="_blank" href="https://buymeacoffee.com/tonif03" style="color: #6060BF; text-decoration: none; font-weight: 600;">buy me a coffee.</a>
-              </div>
-            </td>
-
-            <td width=50% style="vertical-align: top;">
-              <h1><i class="fa fa-comments" style="margin-right: 7px;"></i> Contact</h1>
-              <div style="margin-left: 50px; margin-right: 30px;">
-                <a>Communication is one of the most important things, also for me! You have a problem, a bug or just want to ask something? Contact me on </a>
-                <a target="_blank" style="color: #6060BF; text-decoration: none; font-weight: 600;" href="https://twitter.com/Toni_F03">Twitter.</a>
+<div class="middle">
+  <h1 style="text-align:center; margin-top: 30px"> Projects made with <i id="heart" class="fa fa-heart" ></i></h1>
+  
+  <table id="principles" align="center">
+    <tr>
+      <td width=50% style="vertical-align: top;">
+        <h1><i class="fab fa-github" style="margin-right: 7px;"></i> Open Source&nbsp;<i class="fa fa-link" id="open-source" onclick="linkToSection(this)"></i></h1>
+        <div style="margin-left: 50px; margin-right: 30px;">
+          <a>I want to create programs that are free for everyone. The code is accessible on </a>
+          <a target="_blank" style="color: #6060BF; text-decoration: none; font-weight: 600;" href="https://github.com/ToniF03">GitHub.</a>
+          <a> And if you like my projects, consider to leave a follow. You can also support me when you </a>
+          <a target="_blank" href="https://buymeacoffee.com/tonif03" style="color: #6060BF; text-decoration: none; font-weight: 600;">buy me a coffee.</a>
+        </div>
+      </td>
+      
+      <td width=50% style="vertical-align: top;">
+        <h1><i class="fa fa-comments" style="margin-right: 7px;"></i> Contact&nbsp;<i class="fa fa-link" id="contact" onclick="linkToSection(this)"></i></h1>
+        <div style="margin-left: 50px; margin-right: 30px;">
+          <a>Communication is one of the most important things, also for me! You have a problem, a bug or just want to ask something? Contact me on </a>
+          <a target="_blank" style="color: #6060BF; text-decoration: none; font-weight: 600;" href="https://linkedin.com/in/toni-fey-28a672226">LinkedIn.</a>
               </div>
             </td>
           </tr>
-
+          
           <tr>
             <td width=50% style="vertical-align: top;">
-              <h1><i class="fa fa-book" style="margin-right: 7px;"></i> Documentation</h1>
+              <h1><i class="fa fa-book" style="margin-right: 7px;"></i> Documentation&nbsp;<i class="fa fa-link" id="documentation" onclick="linkToSection(this)"></i></h1>
               <div style="margin-left: 50px; margin-right: 30px;">
-                <a>Our well-structured and easy-to-understand documentations contain all the important information you need to use our program successfully. Whether you are new or used to our programs, our documentations are well structured so that anyone can understand them.</a><br>
+                <a>My well-structured and easy-to-understand documentations contain all the important information you need to use my program successfully. Whether you are new or used to my programs, the documentations are well structured so that anyone can understand them.</a><br>
                 <a></a>
               </div>
             </td>
-
+            
             <td width=50% style="vertical-align: top;">
-              <h1><i class="fa fa-user" style="margin-right: 7px;"></i> Accessibility</h1>
+              <h1><i class="fa fa-user" style="margin-right: 7px;"></i> Accessibility&nbsp;<i class="fa fa-link" id="accessibility" onclick="linkToSection(this)"></i></h1>
               <div style="margin-left: 50px; margin-right: 30px;">
-                <a>Our programs aim to have an easy accessibility. We connect simplicity with functionality to achieve the best experience for the user.</a>
+                <a>My programs aim to have an easy accessibility. We connect simplicity with functionality to achieve the best experience for the user.</a>
               </div>
             </td>
           </tr>
         </table>
-
-        <div id="about">
+        
+        <div id="about-me">
           <h1>About me...</h1>
           <div style="margin-left: 50px; margin-right: 30px;">
-            <p style="line-height: 150%;">Hi, I am Toni. I am the developer of this website and of all programs, code snippets and tools made by ToniF03.
-              I am <a id="age"></a> years old, and have been interested in programming since I was 11. I first began learning to code when I was in middle school, and I've been hooked ever since. Furthermore, I love the challenge of solving problems and creating new things using code, and I'm constantly learning and growing as a developer. My experience and skill set have grown from that first time when I started to play with some basic scripts and has advanced over time, now I am more confident and capable.</p>
+            <p style="line-height: 150%;">Hi, I am Toni, the developer of this website and of all programs, code snippets and tools made by ToniF03.
+              I am <a id="age"></a> years old, and have been interested in programming since I was 11. I first began learning to code when I was in middle school, and I've been hooked ever since. Furthermore, I love the challenge of solving problems and creating new things using code, and I'm constantly learning and growing as a developer. My experience and skill set have grown from that first time when I started to play with some basic scripts and has advanced over time, now I am more confident and capable. Currently, I am doing my Bachelor of Science in Computer Science and can not wait to do more interesting projects.</p>
+            </div>
           </div>
         </div>
+        <!-- ######################################################################################### -->
 
       <div id="social" width=100% height=200 align=center >
         <br><br>
@@ -260,7 +162,7 @@
         <table width=90%>
           <tr>
             <td style="width: 30%; padding-bottom: 10px;">Social Media:</td>
-            <td style="width: 30%; padding-bottom: 10px;">Products:</td>
+            <td style="width: 30%; padding-bottom: 10px;">Projects:</td>
             <td style="width: 30%; padding-bottom: 10px;"></td>
           </tr>
 
@@ -270,7 +172,7 @@
           </tr>
 
           <tr>
-            <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="https://www.twitter.com/toni_f03" id="socialmedia">Twitter</a></td>
+            <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="https://linkedin.com/in/toni-fey-28a672226" id="socialmedia">LinkedIn</a></td>
           </tr>
 
           <tr>
@@ -281,7 +183,7 @@
 
         <br>
         <br><br><br><br><br><br>
-        <a style="font-size: 70%"><i class="fa fa-camera"></i> Pictures by <a id="socialmedia" href="https://unsplash.com" style="font-size: 70%" target="_blank">Unsplash</a></a>
+        <a style="font-size: 70%"><i class="fa fa-camera"></i> Slider Picture by <a id="socialmedia" href="https://unsplash.com/de/@lucabravo" target="_blank" style="font-size: 70%;">Luca Bravo</a> from <a id="socialmedia" href="https://unsplash.com/de/fotos/grauer-laptop-computer-eingeschaltet-XJXWbfSo2f0" style="font-size: 70%" target="_blank">Unsplash</a></a>
       </div>
     </body>
 </html>

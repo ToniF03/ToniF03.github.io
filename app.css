@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:100,400');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    background-color: var(--main-bg-color);
+}
+
+h1,
+i,
+p,
+a,
+td {
+    color: var(--main-fg-color);
+}
+
+#navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li .tab {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbar li .tab:hover {
+    background-color: #414141;
+}
+
+#navbar .right-tab {
+    float: right;
+}
+
+.fa-link {
+    color: transparent;
+}
+
+.fa-link:hover {
+    color: var(--main-bg-color);
+}
+
+#heart {
+    animation-name: love;
+    animation-duration: 0.25s;
+    color: var(--main-fg-color);
+}
+
+#heart:hover {
+    animation-name: lovehover;
+    animation-duration: 0.25s;
+    color: darkred;
+}
+
+@keyframes lovehover {
+    from {
+        color: var(--main-fg-color);
+    }
+
+    to {
+        color: darkred;
+    }
+}
+
+@keyframes love {
+    from {
+        color: darkred;
+    }
+
+    to {
+        color: var(--main-fg-color);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-fg-color: #C0BAB2;
+        --main-bg-color: #202020;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --main-fg-color: #1e1e1e;
+        --main-bg-color: #fff;
+    }
+}

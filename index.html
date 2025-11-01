@@ -49,25 +49,24 @@
   <div class="header nav">
     <ul>
       <li><a class="activeTab" href="/">Home</a></li>
-      <li><a href="/projects/calcify/" class="tab">Projects &nbsp;<i class="fa fa-chevron-down"></i></a></li>
-      <li><a href="/snippets/" class="tab">Code Snippets &nbsp;<i class="fa fa-chevron-down"></i></a></li>
+      <li><a href="/projects/calcify/" class="tab" id="nav-projects-tab" onmouseenter="openNavProjects(this)"
+          onmouseleave="closeNavProjects(this)">Projects &nbsp;<i class="fa fa-chevron-down"></i></a></li>
+      <li><a href="/snippets/" class="tab">Code Snippets</a></li>
       <li class="right"><a class="tab"
           onclick="window.scrollTo({top: document.getElementById('about-me').offsetTop, behavior: 'smooth'});">About</a>
       </li>
     </ul>
 
-    <!-- onmouseenter="document.getElementById('nav-projects').style.display='block';" -->
-    <!-- onmouseleave="document.getElementById('nav-projects').style.display='none';" -->
-    <div id="nav-projects">
-      <table class="three-section-table pt25">
+    <div id="nav-projects" onmouseenter="openNavProjects(this)" onmouseleave="closeNavProjects(this)">
+      <table class="three-section-table pt25 pb25">
         <tr>
           <td class="header">Apps:</td>
           <td class="header">Devices:</td>
           <td class="header"></td>
         </tr>
         <tr>
-          <td><a href="/projects/calcify/">Calcify</a></td>
-          <td style="padding-left: 20px; padding-bottom: 5px;">GitHub Statistics Display</td>
+          <td><a class="force-fg-color" href="/projects/calcify/">Calcify</a></td>
+          <td><a class="force-fg-color" href="/projects/githubStatsDisplay/">GitHub Statistics Display</a></td>
       </table>
     </div>
   </div>
@@ -75,7 +74,7 @@
   <!-- ######################################################################################### -->
 
   <div class="middle">
-    <h1 class="text-align-center"><a href="/projects/">Projects</a> made with <i id="heart" class="fa fa-heart"></i>
+    <h1 class="text-align-center">Projects made with <i id="heart" class="fa fa-heart"></i>
     </h1>
 
     <table id="principles" class="section">

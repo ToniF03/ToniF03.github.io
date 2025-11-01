@@ -81,6 +81,7 @@ td {
 
 a:link,
 a:link:visited,
+a:visited,
 a:link:active {
     color: #6060BF;
     text-decoration: none;
@@ -98,6 +99,10 @@ a:visited:hover {
     display: flex;
     width: 90%;
     align-content: center;
+}
+
+#nav-projects {
+    display: none;;
 }
 
 /* Classes */
@@ -216,4 +221,16 @@ a:visited:hover {
 
 .pt25 {
     padding-top: 25px;
+}
+
+.pb25 {
+    padding-bottom: 25px;
+}
+
+.force-fg-color {
+    color: var(--main-fg-color) !important;
+}
+
+.force-fg-color:hover {
+    color: #8282cd !important;
 }

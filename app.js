@@ -7,3 +7,28 @@ function linkToSection(element) {
 function calculateAge() {
     document.getElementById('age').innerHTML = String(new Date(Date.now() - new Date(2003, 12, 10)).getUTCFullYear() - 1970);
 }
+
+let onNavProjectsTab = false;
+let onNavProjects = false;
+
+function closeNavProjects(element) {
+    const elementId = element.id;
+    if (elementId === 'nav-projects-tab')
+        onNavProjectsTab = false;
+    else if (elementId === 'nav-projects')
+        onNavProjects = false;
+
+    if (!onNavProjectsTab && !onNavProjects)
+        document.getElementById('nav-projects').style.display = 'none';
+}
+
+function openNavProjects(element) {
+    const elementId = element.id;
+    if (elementId === 'nav-projects-tab')
+        onNavProjectsTab = true;
+    else if (elementId === 'nav-projects')
+        onNavProjects = true;
+
+    if (onNavProjectsTab || onNavProjects)
+        document.getElementById('nav-projects').style.display = 'block';
+}

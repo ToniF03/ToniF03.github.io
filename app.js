@@ -65,6 +65,10 @@ function calculateAge() {
     document.getElementById('age').innerHTML = String(new Date(Date.now() - new Date(2003, 12, 10)).getUTCFullYear() - 1970);
 }
 
+function openInTab(url) {
+    window.open(url, "_blank")
+}
+
 let onNavProjectsTab = false;
 let onNavProjects = false;
 

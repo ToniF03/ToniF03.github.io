@@ -8,6 +8,12 @@
     }
 }
 
+@media(max-width: 850px) {
+    td {
+        display: table-row;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --main-fg-color: #C0BAB2;
@@ -65,6 +71,10 @@ button {
     cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
+
+    i {
+        color: white;
+    }
 }
 
 button:hover {
@@ -72,11 +82,17 @@ button:hover {
 }
 
 h1,
+h2,
 i,
 p,
 a,
 td {
     color: var(--main-fg-color);
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 4vw;
 }
 
 a:link,
@@ -103,11 +119,6 @@ a:visited:hover {
 
 #principles i {
     margin-right: 7px;
-}
-
-#principles .description {
-    margin-left: 50px;
-    margin-right: 30px;
 }
 
 #nav-projects {
@@ -152,6 +163,11 @@ a:visited:hover {
 
 .fa-link:hover {
     color: var(--main-fg-color);
+}
+
+.description {
+    margin-left: 50px;
+    margin-right: 30px;
 }
 
 .middle {
@@ -247,9 +263,21 @@ a:visited:hover {
     padding-left: 0px;
 }
 
-.text-align-center {
-    text-align: center;
+.force-fg-color {
+    color: var(--main-fg-color) !important;
 }
+
+.force-fg-color:hover {
+    color: #8282cd !important;
+}
+
+.picture {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+}
+
+/* Bootstrap */
 
 .w-100 {
     width: 100%;
@@ -275,14 +303,6 @@ a:visited:hover {
     padding-bottom: 25px;
 }
 
-.force-fg-color {
-    color: var(--main-fg-color) !important;
-}
-
-.force-fg-color:hover {
-    color: #8282cd !important;
-}
-
 .pointer {
     cursor: pointer;
 }
@@ -291,6 +311,39 @@ a:visited:hover {
     font-size: 70%;
 }
 
+.size170 {
+    font-size: 170%;
+}
+
 .mt100 {
     margin-top: 100px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.lh150 {
+    line-height: 150%;
+}
+
+.vh-45 {
+    height: 45vh;
+}
+
+.vw-80 {
+    width: 80vw;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
 }

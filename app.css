@@ -105,19 +105,19 @@ a:visited:hover {
     display: none;;
 }
 
-/* Classes */
-
-.heart {
+#heart {
     animation-name: love;
     animation-duration: 0.25s;
     color: var(--main-fg-color);
 }
 
-.heart:hover {
+#heart:hover {
     animation-name: lovehover;
     animation-duration: 0.25s;
     color: darkred;
 }
+
+/* Classes */
 
 .fa-link {
     color: transparent;

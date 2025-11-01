@@ -127,6 +127,17 @@ a:visited:hover {
     color: darkred;
 }
 
+#about-me-section {
+    div {
+        margin-left: 50px;
+        margin-right: 30px;
+    }
+
+    p {
+        line-height: 150%;
+    }
+}
+
 /* Classes */
 
 .fa-link {
@@ -247,4 +258,8 @@ a:visited:hover {
 
 .force-fg-color:hover {
     color: #8282cd !important;
+}
+
+.pointer {
+    cursor: pointer;
 }

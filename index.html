@@ -18,11 +18,11 @@
   <div class="slider"></div>
   <div class="header nav">
     <ul>
-      <li><a class="tab active" href="/">Home</a></li>
-      <li><a href="/projects/" class="tab" id="nav-projects-tab" onmouseenter="openNavProjects(this)"
+      <li><a class="tab active" id="nav-home-tab" href="/" data-link>Home</a></li>
+      <li><a href="/projects/" data-link class="tab" id="nav-projects-tab" onmouseenter="openNavProjects(this)"
           onmouseleave="closeNavProjects(this)">Projects &nbsp;<i class="fa fa-chevron-down"></i></a></li>
-      <li><a href="/snippets/" class="tab">Code Snippets</a></li>
-      <li class="right"><a class="tab"
+      <li><a href="/snippets/" class="tab" id="nav-snippets-tab" data-link>Code Snippets</a></li>
+      <li class="right pointer"><a class="tab"
           onclick="window.scrollTo({top: document.getElementById('about-me').offsetTop, behavior: 'smooth'});">About</a>
       </li>
     </ul>
@@ -35,84 +35,15 @@
           <td class="header"></td>
         </tr>
         <tr>
-          <td><a class="force-fg-color" href="/projects/calcify/">Calcify</a></td>
-          <td><a class="force-fg-color" href="/projects/githubStatsDisplay/">GitHub Statistics Display</a></td>
+          <td><a class="force-fg-color" href="/projects/calcify/" data-link>Calcify</a></td>
+          <td><a class="force-fg-color" href="/projects/githubStatsDisplay/" data-link>GitHub Statistics Display</a>
+          </td>
       </table>
     </div>
   </div>
 
   <!-- Body -->
-  <div class="middle">
-    <h1 class="text-align-center">Projects made with <i id="heart" class="fa fa-heart"></i>
-    </h1>
-
-    <table id="principles" class="section">
-      <tr class="section">
-        <td class="w-50 align-top">
-          <h1><i class="fab fa-github"></i> Open Source&nbsp;<i class="fa fa-link" id="open-source"
-              onclick="linkToSection(this)"></i></h1>
-          <div class="description">
-            <a>I want to create apps that are free for everyone. The code is accessible on </a>
-            <a target="_blank" href="https://github.com/ToniF03">GitHub</a>.
-            <a> And if you like my projects, consider to leave a follow and star my repos. You can also support me when
-              you </a>
-            <a target="_blank" href="https://buymeacoffee.com/tonif03">buy me a coffee</a>.
-          </div>
-        </td>
-
-        <td class="w-50 align-top">
-          <h1><i class="fa fa-comments"></i> Contact&nbsp;<i class="fa fa-link" id="contact"
-              onclick="linkToSection(this)"></i></h1>
-          <div class="description">
-            <a>Communication is one of the most important things, also for me! You have a problem, a bug or just want to
-              ask something? Contact me on </a>
-            <a target="_blank" href="https://linkedin.com/in/toni-fey-28a672226">LinkedIn</a> or open an issue on <a
-              target="_blank" href="https://www.github.com/tonif03/">GitHub</a>.
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td class="w-50 align-top">
-          <h1><i class="fa fa-book"></i> Documentation&nbsp;
-            <i class="fa fa-link" id="documentation" onclick="linkToSection(this)"></i>
-          </h1>
-          <div class="description">
-            <a>The well-structured and easy-to-understand documentations contain all the important information you need
-              to use my program successfully. Whether you are new or used to the apps, the documentations are well
-              structured so that anyone can understand them.</a><br>
-            <a></a>
-          </div>
-        </td>
-
-        <td class="w-50 align-top">
-          <h1><i class="fa fa-user"></i> Accessibility&nbsp;<i class="fa fa-link" id="accessibility"
-              onclick="linkToSection(this)"></i></h1>
-          <div class="description">
-            <a>The programs aim to have an easy accessibility. We connect simplicity with functionality to achieve the
-              best experience for the user.</a>
-          </div>
-        </td>
-      </tr>
-    </table>
-
-    <div class="section" id="about-me-section">
-      <h1>About me...&nbsp;<i class="fa fa-link" id="about-me" onclick="linkToSection(this)"></i></h1>
-      <div>
-        <p>Hi, I am Toni, the developer of this website and of all programs, code snippets
-          and tools made by ToniF03.</p>
-        <p>
-          I am <a id="age">__</a> years old, and have been interested in programming since I was 11. I first began
-          learning to code when I was in middle school, and I've been hooked ever since. Furthermore, I love the
-          challenge of solving problems and creating new things using code, and I'm constantly learning and growing as a
-          developer. My experience and skill set have grown from that first time when I started to play with some basic
-          scripts and has advanced over time, now I am more confident and capable.</p>
-        <p>Currently, I am doing my Bachelor of
-          Science in Computer Science and can not wait to do more interesting projects.</p>
-        <p>Read more about me in my <a href="resume">resume</a>.</p>
-      </div>
-    </div>
-  </div>
+  <div class="middle" id="content"></div>
 
   <!-- Footer -->
   <div id="footer" width=100% height=200>
@@ -123,7 +54,7 @@
     <table class="three-section-table">
       <tr>
         <td class="header">Social Media:</td>
-        <td class="header">Projects:</td>
+        <td class="header">Apps:</td>
         <td class="header"></td>
       </tr>
 

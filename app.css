@@ -189,15 +189,22 @@ a:visited:hover {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    cursor: pointer;
 }
 
-.nav li .active {
-    background-color: #4CAF50 !important;
+.hide {
+    display: none !important;
+}
+
+.nav i {
+    color: white;
 }
 
 .nav li .tab:hover {
     background-color: #414141;
+}
+
+.nav li .active {
+    background-color: #4CAF50 !important;
 }
 
 .nav .right {

@@ -1,217 +1,251 @@
-
 <!DOCTYPE html>
 <html>
-      <head>
-        <meta charset="UTF-8">
-	       <title>ToniF03 - Projects with love</title>
-	       <meta name="description" content="">
-	       <meta name="author" content="ToniF03">
-	       <meta name="keywords" content="">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
-      </head>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:100,400');
+<head>
+  <meta charset="UTF-8">
+  <title>ToniF03 - Projects with love</title>
+  <meta name="description" content="">
+  <meta name="author" content="ToniF03">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+</head>
 
-        @media (prefers-color-scheme: dark) {
-          body {
-            background-color: #202020;
-          }
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:100,400');
 
-          h1, h2, i, p, a, td {
-            color: #C0BAB2;
-          }
-        }
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #202020;
+    }
 
-        @media(max-width: 550px) {
-          #principles td, #social td {
-            display: table-row;
-          }
-        }
+    h1,
+    h2,
+    i,
+    p,
+    a,
+    td {
+      color: #C0BAB2;
+    }
+  }
 
-        html {
-          scroll-behavior: smooth;
-        }
+  @media(max-width: 550px) {
 
-        body {
-            margin: 0;
-            font-family: 'Roboto';
-        }
+    #principles td,
+    #social td {
+      display: table-row;
+    }
+  }
 
-        .middle h1 {
-            font-family: 'Roboto';
-            font-weight: 300;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 0px;
-        }
+  html {
+    scroll-behavior: smooth;
+  }
 
-        #slider {
-            background-image: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b');
-            width:100%;
-            height:280px;
-            background-position: center;
-            background-size: cover;
-        }
+  body {
+    margin: 0;
+    font-family: 'Roboto';
+  }
 
-        #navbar ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
+  .middle h1 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
 
-        #navbar {
-          background-color: #333;
-          overflow: hidden;
-        }
+  #slider {
+    background-image: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b');
+    width: 100%;
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+  }
 
-        #navbar li #unactiveTab {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          background-color: #333333;
-        }
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
 
-        #navbar li #unactiveTab:hover {
-          background-color: #414141;
-        }
+  #navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
 
-        #navbar li {
-            float: left;
-        }
+  #navbar li #unactiveTab {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #333333;
+  }
 
-        #navbar li .Tab  {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            cursor: hand;
-        }
+  #navbar li #unactiveTab:hover {
+    background-color: #414141;
+  }
 
-        #navbar li #ActiveTab  {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            background-color: #4CAF50;
-        }
+  #navbar li {
+    float: left;
+  }
 
-        a {
-            font-family: 'Roboto';
-            text-decoration: none;
-        }
+  #navbar li .Tab {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: hand;
+  }
 
-        #socialmedia:hover {
-            color: #00AA55;
-            cursor:pointer;
-        }
+  #navbar li #ActiveTab {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #4CAF50;
+  }
 
-        #social {
-            background-color: #282B2D;
-            padding-bottom: 0.5%;
-            margin-top: 40px;
-        }
+  a {
+    font-family: 'Roboto';
+    text-decoration: none;
+  }
 
-        #social td {
-          font-size: 105%;
-        }
+  #socialmedia:hover {
+    color: #00AA55;
+    cursor: pointer;
+  }
 
-        .middle h2 {
-            font-family: 'Roboto';
-            font-weight: 900;
-            font-size: 4vw;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 0px;
-            margin-top: 20px;
-        }
+  #social {
+    background-color: #282B2D;
+    padding-bottom: 0.5%;
+    margin-top: 40px;
+  }
 
-        .button {
-          background-color: #4CAF50;
-          border: none;
-          color: white;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: block;
-          font-size: 16px;
-          cursor: pointer;
-          margin-left: 10px;
-          margin-right: 10px;
-        }
+  #social td {
+    font-size: 105%;
+  }
 
-        .button:hover {
-          background-color: #58cc5c;
-        }
-    </style>
+  .middle h2 {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 4vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    margin-top: 20px;
+  }
 
-    <body onload="document.getElementById('age').innerHTML = String(new Date(Date.now() - new Date(2003, 12, 10)).getUTCFullYear() - 1970);">
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-      <div id="slider"></div>
-      <div id="navbar" class="header" class="sticky">
-        <ul>
-          <li><a id="unactiveTab" href="../../">Home</a></li>
-          <li class="tab">
-          <li><a id="ActiveTab" href="../../projects.html" class="tab">Projects</a></li>
-          <li style="float: right"><a id="unactiveTab" href="/#about">About</a></li>
-        </ul>
-      </div>
+  .button:hover {
+    background-color: #58cc5c;
+  }
+</style>
 
-      <div class="middle">
-        <h2 style="text-align: center;">Meet Calcify, a powerful calculator.</h2>
-        <div style="background: url('https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true'); height: 45vh; width: 80vw; margin-left: auto; margin-right: auto; background-position: center; background-repeat: no-repeat; background-size: contain;" ></div>
+<body
+  onload="document.getElementById('age').innerHTML = String(new Date(Date.now() - new Date(2003, 12, 10)).getUTCFullYear() - 1970);">
 
-        <div style="width: max-content; display: flex; flex-direction: row; margin-top: 20px; margin-left: auto; margin-right: auto;" >
-          <a href="https://github.com/tonif03/calcify/releases/download/v1.0.1/setup.msi" class="button"><i class="fa fa-download" style="color: white; margin-right:10px;"></i>Download</a>
-          <a href="https://github.com/tonif03/calcify/docs" target="_blank" class="button">Documentation</a>
-          <a href="https://github.com/tonif03/calcify/" target="_blank" class="button">Repository</a>
-        </div>
+  <div id="slider"></div>
+  <div id="navbar" class="header" class="sticky">
+    <ul>
+      <li><a id="unactiveTab" href="../../"><i class="fa fa-home"></i> Home</a></li>
+      <li class="tab">
+      <li><a id="ActiveTab" href="../../projects.html" class="tab">Projects</a></li>
+      <li style="float: right"><a id="unactiveTab" href="/#about">About</a></li>
+    </ul>
+  </div>
 
-        <table style="width: 80%; margin-top: 120px; margin-right: auto; margin-left: auto;">
-          <tr>
-            <td width=50% style="vertical-align: top;">
-              <h1>Simple, yet Powerful</h1>
-              <p style="padding-left: 30px; padding-right: 60px; line-height: 160%;">Calcify is a powerful calculator program that is both simple and easy to use. With its intuitive interface and a wide range of functions, it allows users to perform complex calculations quickly and accurately. Despite its simplicity, the program is packed with powerful features that make it a valuable tool for students, professionals, and anyone in need of a reliable calculator. Overall, Calcify is a must-have for anyone looking for a powerful and easy-to-use calculator.</p>
-              <p style="padding-left: 30px; padding-right: 60px; font-size: 170%;"><i class="fa fa-bell-slash" style="margin-right: 20px"></i>Distraction free</p>
-              <p style="padding-left: 30px; padding-right: 60px; font-size: 170%;"><i class="fa fa-eye" style="margin-right: 20px"></i>Intuitive Design</p>
-            </td>
-            <td width=50% ><video src="../../resources/1.mp4" type="video/mp4" style="display: block; margin-right: auto; height: 45vh;" autoplay="" muted="muted" preload="preload" loop="loop" ></video></td>
-          </tr>
-        </table>
+  <div class="middle">
+    <h2 style="text-align: center;">Meet Calcify, a powerful calculator.</h2>
+    <div
+      style="background: url('https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true'); height: 45vh; width: 80vw; margin-left: auto; margin-right: auto; background-position: center; background-repeat: no-repeat; background-size: contain;">
+    </div>
+
+    <div class="button-area">
+      <button>Repository</button>
+      <button>Repository</button>
+    </div>
+
+    <div
+      style="width: max-content; display: flex; flex-direction: row; margin-top: 20px; margin-left: auto; margin-right: auto;">
+      <a href="https://github.com/tonif03/calcify/releases/download/v1.0.1/setup.msi" class="button"><i
+          class="fa fa-download" style="color: white; margin-right:10px;"></i>Download</a>
+      <a href="https://github.com/tonif03/calcify/docs" target="_blank" class="button">Documentation</a>
+      <a href="https://github.com/tonif03/calcify/" target="_blank" class="button">Repository</a>
+
+    </div>
+
+    <table style="width: 80%; margin-top: 120px; margin-right: auto; margin-left: auto;">
+      <tr>
+        <td width=50% style="vertical-align: top;">
+          <h1>Simple, yet Powerful</h1>
+          <p style="padding-left: 30px; padding-right: 60px; line-height: 160%;">Calcify is a powerful calculator
+            program that is both simple and easy to use. With its intuitive interface and a wide range of functions, it
+            allows users to perform complex calculations quickly and accurately. Despite its simplicity, the program is
+            packed with powerful features that make it a valuable tool for students, professionals, and anyone in need
+            of a reliable calculator. Overall, Calcify is a must-have for anyone looking for a powerful and easy-to-use
+            calculator.</p>
+          <p style="padding-left: 30px; padding-right: 60px; font-size: 170%;"><i class="fa fa-bell-slash"
+              style="margin-right: 20px"></i>Distraction free</p>
+          <p style="padding-left: 30px; padding-right: 60px; font-size: 170%;"><i class="fa fa-eye"
+              style="margin-right: 20px"></i>Intuitive Design</p>
+        </td>
+        <td width=50%><video src="../../resources/1.mp4" type="video/mp4"
+            style="display: block; margin-right: auto; height: 45vh;" autoplay="" muted="muted" preload="preload"
+            loop="loop"></video></td>
+      </tr>
+    </table>
 
 
-      </div>
+  </div>
 
-      <div id="social" width=100% height=200 align=center >
-        <br><br>
-        <a onclick="window.scrollTo({top: 0, behavior: 'smooth'});" style="align-content: right;" ><i style="text-align: right;" class="fa fa-chevron-up" id="socialmedia" ></i></a>
-        <br>
-        <table width=90%>
-          <tr>
-            <td style="width: 30%; padding-bottom: 10px;">Social Media:</td>
-            <td style="width: 30%; padding-bottom: 10px;">Products:</td>
-            <td style="width: 30%; padding-bottom: 10px;"></td>
-          </tr>
-          <tr>
-            <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="https://github.com/ToniF03" id="socialmedia">GitHub</a></td>
-            <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="/prod/calcify/" id="socialmedia">Calcify</a></td>
-          </tr>
-          <tr>
-            <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="https://www.twitter.com/toni_f03" id="socialmedia">Twitter</a></td>
-          </tr>
-          <tr>
-            <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="https://www.buymeacoffee.com/tonif03" id="socialmedia">Buy me a coffee</a></td>
-          </tr>
-        </table>
-        <br><br><br><br><br><br><br>
-        <a style="font-size: 70%"><i class="fa fa-camera"></i> Pictures by <a id="socialmedia" href="https://unsplash.com" style="font-size: 70%" target="_blank">Unsplash</a></a>
-      </div>
-    </body>
+  <div id="social" width=100% height=200 align=center>
+    <br><br>
+    <a onclick="window.scrollTo({top: 0, behavior: 'smooth'});" style="align-content: right;"><i
+        style="text-align: right;" class="fa fa-chevron-up" id="socialmedia"></i></a>
+    <br>
+    <table width=90%>
+      <tr>
+        <td style="width: 30%; padding-bottom: 10px;">Social Media:</td>
+        <td style="width: 30%; padding-bottom: 10px;">Products:</td>
+        <td style="width: 30%; padding-bottom: 10px;"></td>
+      </tr>
+      <tr>
+        <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="https://github.com/ToniF03"
+            id="socialmedia">GitHub</a></td>
+        <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="/prod/calcify/"
+            id="socialmedia">Calcify</a></td>
+      </tr>
+      <tr>
+        <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank" href="https://www.twitter.com/toni_f03"
+            id="socialmedia">Twitter</a></td>
+      </tr>
+      <tr>
+        <td style="padding-left: 20px; padding-bottom: 5px;"><a target="_blank"
+            href="https://www.buymeacoffee.com/tonif03" id="socialmedia">Buy me a coffee</a></td>
+      </tr>
+    </table>
+    <br><br><br><br><br><br><br>
+    <a style="font-size: 70%"><i class="fa fa-camera"></i> Pictures by <a id="socialmedia" href="https://unsplash.com"
+        style="font-size: 70%" target="_blank">Unsplash</a></a>
+  </div>
+</body>
+
 </html>

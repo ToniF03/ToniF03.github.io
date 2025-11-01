@@ -87,41 +87,12 @@ a:link:active {
     font-weight: 600;
 }
 
-a:link:hover {
+a:link:hover,
+a:visited:hover {
     color: #8282cd;
 }
 
-#navbar {
-    background-color: #333;
-}
-
-#navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-#navbar li {
-    float: left;
-}
-
-#navbar li .tab {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#navbar li .tab:hover {
-    background-color: #414141;
-}
-
-#navbar .right {
-    float: right;
-}
+/* IDs */
 
 #principles {
     display: flex;
@@ -159,9 +130,48 @@ a:link:hover {
     margin-bottom: 100px;
 }
 
+.nav {
+    background-color: #333;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li .tab {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav li .tab:hover {
+    background-color: #414141;
+}
+
+.nav .right {
+    float: right;
+}
+
 .section {
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.slider {
+    background-image: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b');
+    height: 280px;
+    background-position: center;
+    background-size: cover;
 }
 
 .button-area {
@@ -170,6 +180,22 @@ a:link:hover {
     width: max-content;
     display: flex;
     flex-direction: row;
+}
+
+.three-section-table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.three-section-table td {
+    width: 33%;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.three-section-table .header {
+    padding-left: 0px;
 }
 
 .text-align-center {
@@ -186,4 +212,8 @@ a:link:hover {
 
 .align-top {
     vertical-align: top;
+}
+
+.pt25 {
+    padding-top: 25px;
 }

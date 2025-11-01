@@ -14,14 +14,7 @@
 </head>
 
 <style>
-  .slider {
-    background-image: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b');
-    height: 280px;
-    background-position: center;
-    background-size: cover;
-  }
-
-  #navbar li .Tab {
+  .nav li .tab {
     display: block;
     color: white;
     text-align: center;
@@ -30,7 +23,7 @@
     cursor: hand;
   }
 
-  #navbar li #ActiveTab {
+  .nav li .activeTab {
     display: block;
     color: white;
     text-align: center;
@@ -53,15 +46,30 @@
 <body onload="calculateAge();">
 
   <div class="slider"></div>
-  <div id="navbar" class="header">
+  <div class="header nav">
     <ul>
-      <li><a id="ActiveTab" href="/">Home</a></li>
-      <li class="tab">
+      <li><a class="activeTab" href="/">Home</a></li>
       <li><a href="/projects/calcify/" class="tab">Projects &nbsp;<i class="fa fa-chevron-down"></i></a></li>
+      <li><a href="/snippets/" class="tab">Code Snippets &nbsp;<i class="fa fa-chevron-down"></i></a></li>
       <li class="right"><a class="tab"
           onclick="window.scrollTo({top: document.getElementById('about-me').offsetTop, behavior: 'smooth'});">About</a>
       </li>
     </ul>
+
+    <!-- onmouseenter="document.getElementById('nav-projects').style.display='block';" -->
+    <!-- onmouseleave="document.getElementById('nav-projects').style.display='none';" -->
+    <div id="nav-projects">
+      <table class="three-section-table pt25">
+        <tr>
+          <td class="header">Apps:</td>
+          <td class="header">Devices:</td>
+          <td class="header"></td>
+        </tr>
+        <tr>
+          <td><a href="/projects/calcify/">Calcify</a></td>
+          <td style="padding-left: 20px; padding-bottom: 5px;">GitHub Statistics Display</td>
+      </table>
+    </div>
   </div>
 
   <!-- ######################################################################################### -->
@@ -134,6 +142,7 @@
       </div>
     </div>
   </div>
+
   <!-- ######################################################################################### -->
 
   <div id="social" width=100% height=200 align=center>
@@ -141,11 +150,11 @@
     <a onclick="window.scrollTo({top: 0, behavior: 'smooth'});" style="align-content: right;"><i
         style="text-align: right;" class="fa fa-chevron-up" id="socialmedia"></i></a>
     <br>
-    <table width=90%>
+    <table class="three-section-table">
       <tr>
-        <td style="width: 30%; padding-bottom: 10px;">Social Media:</td>
-        <td style="width: 30%; padding-bottom: 10px;">Projects:</td>
-        <td style="width: 30%; padding-bottom: 10px;"></td>
+        <td class="header">Social Media:</td>
+        <td class="header">Projects:</td>
+        <td class="header"></td>
       </tr>
 
       <tr>

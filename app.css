@@ -138,6 +138,12 @@ a:visited:hover {
     }
 }
 
+#footer {
+    background-color: #282B2D;
+    padding-bottom: 0.5%;
+    margin-top: 40px;
+}
+
 /* Classes */
 
 .fa-link {
@@ -154,6 +160,12 @@ a:visited:hover {
     margin-right: auto;
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.return {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .nav {
@@ -244,6 +256,10 @@ a:visited:hover {
     vertical-align: top;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .pt25 {
     padding-top: 25px;
 }
@@ -262,4 +278,12 @@ a:visited:hover {
 
 .pointer {
     cursor: pointer;
+}
+
+.size70 {
+    font-size: 70%;
+}
+
+.mt100 {
+    margin-top: 100px;
 }

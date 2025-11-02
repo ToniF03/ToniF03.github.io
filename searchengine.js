@@ -3,12 +3,17 @@ var dataJS
 var prevQuery;
 var prevFilterTags = [];
 var prevFilterLanguages = [];
+var page = 1;
+var maxEntriesPerPage = 5;
+
+var filteredData;
 
 async function fetchData(file) {
     const response = await fetch("/resources/" + file);
     if (response.ok) {
         dataJS = await response.json();
-        displayData(dataJS);
+        filteredData = dataJS;
+        displayData(dataJS.slice(0, maxEntriesPerPage));
     } else {
         console.error("Failed to fetch data:", response.status);
     }
@@ -44,6 +49,7 @@ function displayData(_data) {
 
         htmlBody += "</a></div>";
         resultArea.innerHTML += htmlBody;
+        updatePagination();
     }
 
     // Append router to handle navigation for newly added links
@@ -53,6 +59,110 @@ function displayData(_data) {
             navigateTo(link.href);
         });
     });
+}
+
+function changePage(newPage) {
+    var totalPages = Math.ceil(filteredData.length / maxEntriesPerPage);
+    newPage = Math.min(newPage, totalPages);
+    if (newPage == -1)
+        newPage = Math.max(page - 1, 1);
+
+    console.log("current page:", page);
+    console.log("Changing to page:", newPage);
+    page = newPage;
+    document.querySelector("#result-area").innerHTML = "";
+    displayData(filteredData.slice((page - 1) * maxEntriesPerPage, page * maxEntriesPerPage));
+}
+
+function updatePagination() {
+    var pagination = document.querySelector("#pagination");
+    pagination.innerHTML = "";
+
+    var totalPages = Math.ceil(filteredData.length / maxEntriesPerPage);
+
+    var chevron = document.createElement("i");
+    chevron.innerText = "";
+    chevron.classList.add("pointer");
+    chevron.classList.add("fa");
+    chevron.classList.add("fa-chevron-left");
+    chevron.classList.add("mx-5");
+    chevron.onclick = (function () {
+        return function () {
+            changePage(-1);
+        };
+    })(i);
+    pagination.appendChild(chevron);
+
+    var pageLink;
+
+    if (page > 3) {
+        pageLink = document.createElement("a");
+        pageLink.innerText = "1";
+        pageLink.classList.add("pointer");
+        pageLink.classList.add("mx-5");
+        pageLink.onclick = (function (i) {
+            return function () {
+                changePage(1);
+            };
+        });
+        pagination.appendChild(pageLink);
+
+        if (page > 4) {
+            pageLink = document.createElement("a");
+            pageLink.innerText = "...";
+            pageLink.classList.add("mx-5");
+            pagination.appendChild(pageLink);
+        }
+    }
+
+    for (var i = Math.max(page - 2, 1); i <= Math.min(page + (page == 1 ? 4 : page == 2 ? 3 : 2), totalPages); i++) {
+        pageLink = document.createElement("a");
+        pageLink.innerText = i;
+        pageLink.classList.add("pointer");
+        pageLink.classList.add("mx-5");
+        if (i == page) {
+            pageLink.classList.add("fw-bold");
+            pageLink.classList.add("text-decoration-underline");
+        }
+        pageLink.onclick = (function (i) {
+            return function () {
+                changePage(i);
+            };
+        })(i);
+        pagination.appendChild(pageLink);
+    }
+
+    if (page < totalPages - 3) {
+        if (page < totalPages - 4) {
+            pageLink = document.createElement("a");
+            pageLink.innerText = "...";
+            pageLink.classList.add("mx-5");
+            pagination.appendChild(pageLink);
+        }
+        pageLink = document.createElement("a");
+        pageLink.innerText = totalPages;
+        pageLink.classList.add("pointer");
+        pageLink.classList.add("mx-5");
+        pageLink.onclick = (function (i) {
+            return function () {
+                changePage(totalPages);
+            };
+        });
+        pagination.appendChild(pageLink);
+    }
+
+    chevron = document.createElement("i");
+    chevron.innerText = "";
+    chevron.classList.add("pointer");
+    chevron.classList.add("fa");
+    chevron.classList.add("fa-chevron-right");
+    chevron.classList.add("mx-5");
+    chevron.onclick = (function () {
+        return function () {
+            changePage(page + 1);
+        };
+    })(i);
+    pagination.appendChild(chevron);
 }
 
 var filterTags = [];
@@ -139,12 +249,12 @@ function filterData(e) {
                         languageMatch = element["language"].includes(language);
                 });
             }
-            
+
             if (displayMatch && tagMatch && languageMatch) {
                 results.push(element)
             }
         });
-        
+
         if (e != "" && e != undefined || filterTags.length > 0 || filterLanguages.length > 0)
             displayData(results);
         else

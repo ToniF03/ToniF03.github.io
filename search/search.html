@@ -8,34 +8,21 @@
 </div>
 <br>
 
-<div id="filter-panel" class="w100 mt-10">
-
-    <div class="search-form w-100">
+<div id="filter-panel" class="mt-10 hide">
+    <div class="search-form">
         <div id="tag-area" class="w-100 mx-10 mt-20"></div>
         <div class="w-100">
             <input type="text" placeholder="Add Tags..." class="search-input w-100"
                 oninput="onEnterTagsInput(this, value)">
         </div>
     </div>
-    <br>
-
-    <select class="hide" id="language-select" multiple>
-        <option value="" disabled hidden selected>All</option>
-        <option value="C#">C#</option>
-        <option value="JavaScript">JavaScript</option>
-        <option value="Python">Python</option>
-        <option value="HTML">HTML</option>
-        <option value="CSS">CSS</option>
-        <option value="Java">Java</option>
-        <option value="C++">C++</option>
-        <option value="TypeScript">TypeScript</option>
-        <option value="Ruby">Ruby</option>
-        <option value="Go">Go</option>
-        <option value="PHP">PHP</option>
-        <option value="Swift">Swift</option>
-        <option value="Kotlin">Kotlin</option>
-    </select>
 </div>
 
 <div id="result-area">
+</div>
+
+<div id="pagination" class="mt-20 text-center">
+    <a onclick="changePage(-1)"><i class="fa fa-chevron-left"></i></a>
+    
+    <a onclick="changePage(page + 1)"><i class="fa fa-chevron-right"></i></a>
 </div>

@@ -30,8 +30,7 @@ async function router() {
 
     if (location.pathname == "/") {
         document.querySelector("#nav-home-tab").classList.add("active");
-        //calculateAge();
-        //fetchData("projects.json");
+        calculateAge();
     }
     else if (location.pathname.startsWith("/projects/")) {
         document.querySelector("#nav-projects-tab").classList.add("active");

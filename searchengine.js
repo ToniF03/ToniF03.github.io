@@ -1,5 +1,5 @@
 var data;
-var dataJS
+var dataJS;
 var prevQuery;
 var prevFilterTags = [];
 var prevFilterLanguages = [];

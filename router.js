@@ -5,7 +5,7 @@ async function navigateTo(url) {
 
 async function router() {
     const routes = [
-        { path: "/", view: () => fetchContent("/search/search.html") },
+        { path: "/", view: () => fetchContent("/landing.html") },
         { path: "/projects/", view: () => fetchContent("/search/search.html") },
         { path: "/projects/calcify/", view: () => fetchContent("/projects/calcify/index.html") },
         { path: "/projects/githubStatsDisplay/", view: () => fetchContent("/projects/githubStatsDisplay/index.html") },
@@ -30,8 +30,7 @@ async function router() {
 
     if (location.pathname == "/") {
         document.querySelector("#nav-home-tab").classList.add("active");
-        //calculateAge();
-        fetchData("projects.json");
+        calculateAge();
     }
     else if (location.pathname.startsWith("/projects/")) {
         document.querySelector("#nav-projects-tab").classList.add("active");

@@ -18,6 +18,7 @@
     :root {
         --main-fg-color: #C0BAB2;
         --main-bg-color: #202020;
+        --secondary-bg-color: #333;
     }
 }
 
@@ -25,6 +26,7 @@
     :root {
         --main-fg-color: #1e1e1e;
         --main-bg-color: #fff;
+        --secondary-bg-color: #333;
     }
 }
 
@@ -56,29 +58,6 @@ body {
     margin: 0;
     font-family: 'Roboto';
     background-color: var(--main-bg-color);
-}
-
-button {
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    /*text-decoration: none;*/
-    display: block;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    i {
-        color: white;
-    }
-}
-
-button:hover {
-    background-color: #45a049;
 }
 
 h1,
@@ -178,6 +157,28 @@ a:visited:hover {
     margin-bottom: 100px;
 }
 
+.download-button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    i {
+        color: white;
+    }
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
+
 .return {
     display: block;
     text-align: center;
@@ -275,6 +276,11 @@ a:visited:hover {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: contain !important;
+}
+
+.results {
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 /* Bootstrap */

@@ -1,16 +1,591 @@
 [
-    {"display": "Calcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]},
-    {"display": "Aalcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]},
-    {"display": "Balcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]},
-    {"display": "Dalcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]},
-    {"display": "Ealcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]},
-    {"display": "Falcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]},
-    {"display": "Galcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]},
-    {"display": "Halcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]},
-    {"display": "Ialcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]},
-    {"display": "Jalcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]},
-    {"display": "Kalcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]},
-    {"display": "Lalcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]},
-    {"display": "Malcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]},
-    {"display": "Nalcify", "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.", "previewImage": "https://github.com/ToniF03/Calcify/blob/main/resources/1.png?raw=true", "url": "/projects/calcify/", "tag": [], "language": ["C#"]}
+    {
+        "display": "Calcify",
+        "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.",
+        "url": "/projects/calcify/",
+        "tags": [
+            "Calculator",
+            "Desktop App",
+            "Math",
+            "Utility",
+            "Currency",
+            "Productivity",
+            "Conversion"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "display": "NoteHaven",
+        "description": "A sleek note-taking app with markdown support and local encryption for maximum privacy.",
+        "url": "/projects/notehaven/",
+        "tags": [
+            "Notes",
+            "Productivity"
+        ],
+        "language": [
+            "TypeScript"
+        ]
+    },
+    {
+        "display": "TaskPulse",
+        "description": "A smart to-do manager that adapts to your habits and boosts your daily productivity.",
+        "url": "/projects/taskpulse/",
+        "tags": [
+            "To-Do",
+            "AI"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "display": "WeatherLite",
+        "description": "Minimalist weather app using live OpenWeatherMap data with adaptive UI themes.",
+        "url": "/projects/weatherlite/",
+        "tags": [
+            "Weather",
+            "API"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "display": "TrackFit",
+        "description": "TrackFit helps you manage workouts, nutrition, and progress effortlessly.",
+        "url": "/projects/trackfit/",
+        "tags": [
+            "Fitness"
+        ],
+        "language": [
+            "Kotlin"
+        ]
+    },
+    {
+        "display": "Timewise",
+        "description": "Elegant time tracking app designed for freelancers and small teams.",
+        "url": "/projects/timewise/",
+        "tags": [
+            "Time Tracking"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "display": "SnapEdit",
+        "description": "A simple yet powerful photo editor with filters, layers, and AI enhancements.",
+        "url": "/projects/snapedit/",
+        "tags": [
+            "Photo",
+            "Editor"
+        ],
+        "language": [
+            "C++"
+        ]
+    },
+    {
+        "display": "Streamline",
+        "description": "A lightweight media player with plugin support and cross-platform design.",
+        "url": "/projects/streamline/",
+        "tags": [
+            "Media",
+            "Music"
+        ],
+        "language": [
+            "Rust"
+        ]
+    },
+    {
+        "display": "ChromaChat",
+        "description": "Colorful and customizable chat client with end-to-end encryption.",
+        "url": "/projects/chromachat/",
+        "tags": [
+            "Chat",
+            "Messaging"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "display": "Vaultify",
+        "description": "Secure password manager using AES-256 encryption and biometric unlock.",
+        "url": "/projects/vaultify/",
+        "tags": [
+            "Security",
+            "Passwords"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "display": "EcoMeter",
+        "description": "App that tracks your daily carbon footprint and suggests improvements.",
+        "url": "/projects/ecometer/",
+        "tags": [
+            "Environment"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "display": "Budgetly",
+        "description": "Personal finance tracker with smart budgeting and spending analytics.",
+        "url": "/projects/budgetly/",
+        "tags": [
+            "Finance"
+        ],
+        "language": [
+            "Java"
+        ]
+    },
+    {
+        "display": "LangLearn",
+        "description": "Language learning platform using spaced repetition and gamification.",
+        "url": "/projects/langlearn/",
+        "tags": [
+            "Education"
+        ],
+        "language": [
+            "TypeScript"
+        ]
+    },
+    {
+        "display": "FileSyncer",
+        "description": "Sync files between devices automatically using local Wi-Fi connections.",
+        "url": "/projects/filesyncer/",
+        "tags": [
+            "Files",
+            "Sync"
+        ],
+        "language": [
+            "Go"
+        ]
+    },
+    {
+        "display": "MindFlow",
+        "description": "Minimalist journaling tool designed for mindfulness and reflection.",
+        "url": "/projects/mindflow/",
+        "tags": [
+            "Journaling"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "display": "DevDash",
+        "description": "Customizable developer dashboard that shows commits, PRs, and metrics.",
+        "url": "/projects/devdash/",
+        "tags": [
+            "Developer Tools"
+        ],
+        "language": [
+            "React"
+        ]
+    },
+    {
+        "display": "PixelPioneer",
+        "description": "Retro-style pixel art editor with palette management and animation tools.",
+        "url": "/projects/pixelpioneer/",
+        "tags": [
+            "Art",
+            "Design"
+        ],
+        "language": [
+            "C++"
+        ]
+    },
+    {
+        "display": "SoundForge",
+        "description": "Digital audio workstation with layer mixing and live recording support.",
+        "url": "/projects/soundforge/",
+        "tags": [
+            "Audio",
+            "Music"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "display": "QuickTranslate",
+        "description": "Offline translation app supporting over 40 languages using AI models.",
+        "url": "/projects/quicktranslate/",
+        "tags": [
+            "Translation"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "display": "GitTrack",
+        "description": "Monitor and visualize your GitHub contributions and project stats.",
+        "url": "/projects/gittrack/",
+        "tags": [
+            "GitHub",
+            "Analytics"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "display": "LightBoard",
+        "description": "Collaborative online whiteboard with real-time drawing and chat.",
+        "url": "/projects/lightboard/",
+        "tags": [
+            "Collaboration",
+            "Education"
+        ],
+        "language": [
+            "TypeScript"
+        ]
+    },
+    {
+        "display": "Planify",
+        "description": "Advanced project planner with team collaboration and Gantt charts.",
+        "url": "/projects/planify/",
+        "tags": [
+            "Project Management"
+        ],
+        "language": [
+            "Vue"
+        ]
+    },
+    {
+        "display": "DriveGuard",
+        "description": "Monitors hard drive health using SMART data and notifies on failure risks.",
+        "url": "/projects/driveguard/",
+        "tags": [
+            "Hardware",
+            "Monitoring"
+        ],
+        "language": [
+            "Rust"
+        ]
+    },
+    {
+        "display": "Moodify",
+        "description": "Mood tracker that uses emojis and graphs to visualize your emotions over time.",
+        "url": "/projects/moodify/",
+        "tags": [
+            "Health"
+        ],
+        "language": [
+            "Swift"
+        ]
+    },
+    {
+        "display": "CodeLens",
+        "description": "Instant code search and navigation tool for large repositories.",
+        "url": "/projects/codelens/",
+        "tags": [
+            "Developer Tools"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "display": "Inkwell",
+        "description": "Distraction-free writing tool for authors and bloggers.",
+        "url": "/projects/inkwell/",
+        "tags": [
+            "Writing"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "display": "HomeHub",
+        "description": "Smart home controller that unifies multiple IoT devices in one dashboard.",
+        "url": "/projects/homehub/",
+        "tags": [
+            "IoT"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "display": "ClipStack",
+        "description": "Clipboard history manager that syncs across all your devices.",
+        "url": "/projects/clipstack/",
+        "tags": [
+            "Utility"
+        ],
+        "language": [
+            "Kotlin"
+        ]
+    },
+    {
+        "display": "PagePilot",
+        "description": "SEO-friendly static site generator with markdown support.",
+        "url": "/projects/pagepilot/",
+        "tags": [
+            "Web",
+            "SEO"
+        ],
+        "language": [
+            "Go"
+        ]
+    },
+    {
+        "display": "FlowSense",
+        "description": "AI-powered workflow automation for repetitive digital tasks.",
+        "url": "/projects/flowsense/",
+        "tags": [
+            "Automation"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "display": "DataPulse",
+        "description": "Lightweight dashboard to visualize real-time sensor or API data.",
+        "url": "/projects/datapulse/",
+        "tags": [
+            "Data",
+            "Dashboard"
+        ],
+        "language": [
+            "React"
+        ]
+    },
+    {
+        "display": "MailCatcher",
+        "description": "Local email testing tool for developers that simulates mail servers.",
+        "url": "/projects/mailcatcher/",
+        "tags": [
+            "Email",
+            "Testing"
+        ],
+        "language": [
+            "Ruby"
+        ]
+    },
+    {
+        "display": "SoundWave",
+        "description": "Online audio visualizer and waveform editor for musicians.",
+        "url": "/projects/soundwave/",
+        "tags": [
+            "Audio"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "display": "PixelForge",
+        "description": "3D voxel editor with export options for game engines.",
+        "url": "/projects/pixelforge/",
+        "tags": [
+            "3D",
+            "Art"
+        ],
+        "language": [
+            "C++"
+        ]
+    },
+    {
+        "display": "StudyBuddy",
+        "description": "Flashcard app with spaced repetition and progress analytics.",
+        "url": "/projects/studybuddy/",
+        "tags": [
+            "Education"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "display": "ZenFocus",
+        "description": "Pomodoro timer app designed to improve concentration and productivity.",
+        "url": "/projects/zenfocus/",
+        "tags": [
+            "Productivity"
+        ],
+        "language": [
+            "Swift"
+        ]
+    },
+    {
+        "display": "QuickServe",
+        "description": "Tiny local HTTP server for testing and file sharing.",
+        "url": "/projects/quickserve/",
+        "tags": [
+            "Server",
+            "Utility"
+        ],
+        "language": [
+            "Go"
+        ]
+    },
+    {
+        "display": "MapMate",
+        "description": "Offline maps and navigation app for hikers and travelers.",
+        "url": "/projects/mapmate/",
+        "tags": [
+            "Maps"
+        ],
+        "language": [
+            "Kotlin"
+        ]
+    },
+    {
+        "display": "HexView",
+        "description": "Advanced hex viewer and binary file editor.",
+        "url": "/projects/hexview/",
+        "tags": [
+            "Developer Tools"
+        ],
+        "language": [
+            "C"
+        ]
+    },
+    {
+        "display": "LinkVault",
+        "description": "Bookmark manager that organizes and tags your web links.",
+        "url": "/projects/linkvault/",
+        "tags": [
+            "Bookmarks"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "display": "StreamWatch",
+        "description": "App to track your favorite Twitch and YouTube streamers live status.",
+        "url": "/projects/streamwatch/",
+        "tags": [
+            "Streaming"
+        ],
+        "language": [
+            "React"
+        ]
+    },
+    {
+        "display": "DevStats",
+        "description": "Simple analytics dashboard for monitoring app performance metrics.",
+        "url": "/projects/devstats/",
+        "tags": [
+            "Analytics"
+        ],
+        "language": [
+            "TypeScript"
+        ]
+    },
+    {
+        "display": "PhotoGrid",
+        "description": "Gallery builder that organizes and resizes photos automatically.",
+        "url": "/projects/photogrid/",
+        "tags": [
+            "Photos"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "display": "CryptoWatch",
+        "description": "Live crypto tracker with charts, portfolio, and alerts.",
+        "url": "/projects/cryptowatch/",
+        "tags": [
+            "Crypto",
+            "Finance"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "display": "PulseChat",
+        "description": "Lightweight, decentralized peer-to-peer chat app.",
+        "url": "/projects/pulsechat/",
+        "tags": [
+            "Messaging"
+        ],
+        "language": [
+            "Rust"
+        ]
+    },
+    {
+        "display": "StockPilot",
+        "description": "Real-time stock tracker with AI-powered prediction charts.",
+        "url": "/projects/stockpilot/",
+        "tags": [
+            "Finance",
+            "AI"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "display": "Eventify",
+        "description": "Event management tool for organizing meetups and conferences.",
+        "url": "/projects/eventify/",
+        "tags": [
+            "Events"
+        ],
+        "language": [
+            "Angular"
+        ]
+    },
+    {
+        "display": "CodeSketch",
+        "description": "Visual pseudocode editor that converts logic to real code.",
+        "url": "/projects/codesketch/",
+        "tags": [
+            "Education",
+            "Programming"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "display": "SleepCycle",
+        "description": "Smart alarm app that wakes you at the optimal point in your sleep cycle.",
+        "url": "/projects/sleepcycle/",
+        "tags": [
+            "Health"
+        ],
+        "language": [
+            "Swift"
+        ]
+    },
+    {
+        "display": "NetProbe",
+        "description": "Network diagnostic tool with ping, traceroute, and speed test features.",
+        "url": "/projects/netprobe/",
+        "tags": [
+            "Networking"
+        ],
+        "language": [
+            "Go"
+        ]
+    },
+    {
+        "display": "CleanSweep",
+        "description": "System cleaner and optimizer that removes junk and temporary files.",
+        "url": "/projects/cleansweep/",
+        "tags": [
+            "System",
+            "Utility"
+        ],
+        "language": [
+            "C++"
+        ]
+    }
 ]

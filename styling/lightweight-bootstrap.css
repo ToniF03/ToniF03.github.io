@@ -34,12 +34,20 @@
     font-size: 170%;
 }
 
-.mt100 {
-    margin-top: 100px;
+.mt10 {
+    margin-top: 10px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
 }
 
 .mt20 {
     margin-top: 20px;
+}
+
+.mt100 {
+    margin-top: 100px;
 }
 
 .mr10 {

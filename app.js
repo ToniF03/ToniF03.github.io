@@ -5,7 +5,9 @@ async function navigateTo(url) {
 
 async function router() {
     const routes = [
-        { path: "/", view: () => fetchContent("landing.html") },
+        { path: "/", view: () => fetchContent("/projects/index.html") },
+        //{ path: "/", view: () => fetchContent("landing.html") },
+        { path: "/projects/", view: () => fetchContent("index.html") },
         { path: "/projects/calcify/", view: () => fetchContent("index.html") },
         { path: "/projects/githubStatsDisplay/", view: () => fetchContent("index.html") },
         { path: "/snippets/", view: () => fetchContent("index.html") }
@@ -27,10 +29,15 @@ async function router() {
         element.classList.remove("active");
     });
 
-    if (location.pathname == "/")
+    if (location.pathname == "/") {
         document.querySelector("#nav-home-tab").classList.add("active");
-    else if (location.pathname.startsWith("/projects/"))
+        //calculateAge();
+        fetchData();
+    }
+    else if (location.pathname.startsWith("/projects/")) {
         document.querySelector("#nav-projects-tab").classList.add("active");
+        fetchData();
+    }
     else if (location.pathname.startsWith("/snippets/"))
         document.querySelector("#nav-snippets-tab").classList.add("active");
 }

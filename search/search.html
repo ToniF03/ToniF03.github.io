@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/search/search.css">
+<div class="search-form">
+    <input type="text" class="search-input" placeholder="Search..." oninput="filterData(value)"
+        oninput="filterData(value)">
+</div>
+<div class="mb10 mt-10">
+    <a class="float-right mr10 pointer" onclick="toggleFilterPanel(this)">Filter <i class="fa fa-chevron-down"></i></a>
+</div>
+<br>
+
+<div id="filter-panel" class="w100 mt-10">
+
+    <div class="search-form w-100">
+        <div id="tag-area" class="w-100 mx-10 mt-20"></div>
+        <div class="w-100">
+            <input type="text" placeholder="Add Tags..." class="search-input w-100"
+                oninput="onEnterTagsInput(this, value)">
+        </div>
+    </div>
+    <br>
+
+    <select class="hide" id="language-select" multiple>
+        <option value="" disabled hidden selected>All</option>
+        <option value="C#">C#</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="Java">Java</option>
+        <option value="C++">C++</option>
+        <option value="TypeScript">TypeScript</option>
+        <option value="Ruby">Ruby</option>
+        <option value="Go">Go</option>
+        <option value="PHP">PHP</option>
+        <option value="Swift">Swift</option>
+        <option value="Kotlin">Kotlin</option>
+    </select>
+</div>
+
+<div id="result-area">
+</div>

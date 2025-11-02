@@ -1,0 +1,23 @@
+.search-form {
+    border: 10px;
+    border-color: white;
+    border-radius: 35px;
+    gap: 5px;
+    background-color: var(--secondary-bg-color);
+}
+
+.search-input {
+    width: 100%;
+    margin-left: 20px;
+    height: 35px;
+    color: var(--main-fg-color);
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-input {
+    background-color: transparent;
+    border: none;
+}

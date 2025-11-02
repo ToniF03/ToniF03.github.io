@@ -1,6 +1,8 @@
 var data;
 var dataJS
 var prevQuery;
+var prevFilterTags = [];
+var prevFilterLanguages = [];
 
 async function fetchData(file) {
     const response = await fetch("/resources/" + file);
@@ -53,26 +55,51 @@ function displayData(_data) {
     });
 }
 
+var filterTags = [];
+var filterLanguages = [];
+
 function filterData(e) {
     var resultArea = document.querySelector("#result-area");
     var results = [];
-    var query = e;
+    var query = e || "";
     resultArea.innerHTML = "";
 
     var tagSearchQuery;
     var languageSearchQuery;
 
-    if (query.startsWith("tag:")) {
-        var splittedQuery = query.split(' ', 2);
-        tagSearchQuery = splittedQuery[0].substring(4).split(',');
-        query = splittedQuery[1];
+    if (query.startsWith("tag:") || filterTags.length > 0) {
+        var splittedQuery = [];
+        var joinedTags = "";
+
+        if (query.startsWith("tag:")) {
+            splittedQuery = query.split(' ', 2);
+            joinedTags = splittedQuery[0].substring(4) + ',' + filterTags.join(',');
+
+            query = splittedQuery[1];
+        } else {
+            joinedTags = filterTags.join(',');
+        }
+
+        if (joinedTags.endsWith(','))
+            joinedTags = joinedTags.slice(0, -1);
+        else if (joinedTags.startsWith(','))
+            joinedTags = joinedTags.substring(1);
+
+        tagSearchQuery = joinedTags.split(',');
     }
     else if (query.startsWith("language:")) {
         var splittedQuery = query.split(' ', 2);
-        languageSearchQuery = splittedQuery[0].substring(9).split(',');
+        var joinedLanguages = splittedQuery[0].substring(9) + ',' + filterLanguages.join(',');
+
+        if (joinedLanguages.endsWith(','))
+            joinedLanguages = joinedLanguages.slice(0, -1);
+        else if (joinedLanguages.startsWith(','))
+            joinedLanguages = joinedLanguages.substring(1);
+
+        languageSearchQuery = (splittedQuery[0].substring(9) + ',' + filterLanguages.join(',')).split(',');
         query = splittedQuery[1];
     }
-    
+
     if (query == undefined)
         query = "";
 
@@ -90,7 +117,7 @@ function filterData(e) {
     if (query == undefined)
         query = "";
 
-    if (prevQuery != e) {
+    if (prevQuery != e || JSON.stringify(prevFilterTags) != JSON.stringify(filterTags) || JSON.stringify(prevFilterLanguages) != JSON.stringify(filterLanguages)) {
         dataJS.forEach(element => {
             var displayMatch = false;
             var tagMatch = true;
@@ -102,7 +129,7 @@ function filterData(e) {
             if (tagSearchQuery != undefined) {
                 tagSearchQuery.forEach(tag => {
                     if (tagMatch)
-                        tagMatch = element["tags"].includes(tag.substring(0, 1).toUpperCase() + tag.substring(1).toLowerCase());
+                        tagMatch = element["tags"].map(v => v.toLowerCase()).includes(tag.toLowerCase());
                 });
             }
 
@@ -112,17 +139,20 @@ function filterData(e) {
                         languageMatch = element["language"].includes(language);
                 });
             }
-
+            
             if (displayMatch && tagMatch && languageMatch) {
                 results.push(element)
             }
         });
-        if (e != "" && e != undefined)
+        
+        if (e != "" && e != undefined || filterTags.length > 0 || filterLanguages.length > 0)
             displayData(results);
         else
             displayData(dataJS);
         if (resultArea.innerHTML == "")
             resultArea.innerHTML = "<p class='text-center'>No results found</a>";
         prevQuery = query;
+        prevFilterTags = [...filterTags];
+        prevFilterLanguages = [...filterLanguages];
     }
 }

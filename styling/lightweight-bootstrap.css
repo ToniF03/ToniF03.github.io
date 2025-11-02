@@ -34,19 +34,19 @@
     font-size: 170%;
 }
 
-.mt10 {
-    margin-top: 10px;
-}
-
 .mb10 {
     margin-bottom: 10px;
 }
 
-.mt20 {
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
     margin-top: 20px;
 }
 
-.mt100 {
+.mt-100 {
     margin-top: 100px;
 }
 
@@ -68,6 +68,16 @@
 
 .vw-80 {
     width: 80vw;
+}
+
+.mx-5 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.mx-10 {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .mx-auto {

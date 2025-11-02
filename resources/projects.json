@@ -1,8 +1,11 @@
 [
     {
-        "display": "Calcify",
+        "title": "Calcify",
         "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.",
-        "url": "/projects/calcify/",
+        "link": {
+            "url": "/projects/calcify/",
+            "target": "_self"
+        },
         "tags": [
             "Calculator",
             "Desktop App",
@@ -17,9 +20,12 @@
         ]
     },
     {
-        "display": "NoteHaven",
+        "title": "NoteHaven",
         "description": "A sleek note-taking app with markdown support and local encryption for maximum privacy.",
-        "url": "/projects/notehaven/",
+        "link": {
+            "url": "/projects/notehaven/",
+            "target": "_self"
+        },
         "tags": [
             "Notes",
             "Productivity"
@@ -29,9 +35,12 @@
         ]
     },
     {
-        "display": "TaskPulse",
+        "title": "TaskPulse",
         "description": "A smart to-do manager that adapts to your habits and boosts your daily productivity.",
-        "url": "/projects/taskpulse/",
+        "link": {
+            "url": "/projects/taskpulse/",
+            "target": "_self"
+        },
         "tags": [
             "To-Do",
             "AI"
@@ -41,9 +50,12 @@
         ]
     },
     {
-        "display": "WeatherLite",
+        "title": "WeatherLite",
         "description": "Minimalist weather app using live OpenWeatherMap data with adaptive UI themes.",
-        "url": "/projects/weatherlite/",
+        "link": {
+            "url": "/projects/weatherlite/",
+            "target": "_self"
+        },
         "tags": [
             "Weather",
             "API"
@@ -53,9 +65,12 @@
         ]
     },
     {
-        "display": "TrackFit",
+        "title": "TrackFit",
         "description": "TrackFit helps you manage workouts, nutrition, and progress effortlessly.",
-        "url": "/projects/trackfit/",
+        "link": {
+            "url": "/projects/trackfit/",
+            "target": "_self"
+        },
         "tags": [
             "Fitness"
         ],
@@ -64,9 +79,12 @@
         ]
     },
     {
-        "display": "Timewise",
+        "title": "Timewise",
         "description": "Elegant time tracking app designed for freelancers and small teams.",
-        "url": "/projects/timewise/",
+        "link": {
+            "url": "/projects/timewise/",
+            "target": "_self"
+        },
         "tags": [
             "Time Tracking"
         ],
@@ -75,9 +93,12 @@
         ]
     },
     {
-        "display": "SnapEdit",
+        "title": "SnapEdit",
         "description": "A simple yet powerful photo editor with filters, layers, and AI enhancements.",
-        "url": "/projects/snapedit/",
+        "link": {
+            "url": "/projects/snapedit/",
+            "target": "_self"
+        },
         "tags": [
             "Photo",
             "Editor"
@@ -87,9 +108,12 @@
         ]
     },
     {
-        "display": "Streamline",
+        "title": "Streamline",
         "description": "A lightweight media player with plugin support and cross-platform design.",
-        "url": "/projects/streamline/",
+        "link": {
+            "url": "/projects/streamline/",
+            "target": "_self"
+        },
         "tags": [
             "Media",
             "Music"
@@ -99,9 +123,12 @@
         ]
     },
     {
-        "display": "ChromaChat",
+        "title": "ChromaChat",
         "description": "Colorful and customizable chat client with end-to-end encryption.",
-        "url": "/projects/chromachat/",
+        "link": {
+            "url": "/projects/chromachat/",
+            "target": "_self"
+        },
         "tags": [
             "Chat",
             "Messaging"
@@ -111,9 +138,12 @@
         ]
     },
     {
-        "display": "Vaultify",
+        "title": "Vaultify",
         "description": "Secure password manager using AES-256 encryption and biometric unlock.",
-        "url": "/projects/vaultify/",
+        "link": {
+            "url": "/projects/vaultify/",
+            "target": "_self"
+        },
         "tags": [
             "Security",
             "Passwords"
@@ -123,9 +153,12 @@
         ]
     },
     {
-        "display": "EcoMeter",
+        "title": "EcoMeter",
         "description": "App that tracks your daily carbon footprint and suggests improvements.",
-        "url": "/projects/ecometer/",
+        "link": {
+            "url": "/projects/ecometer/",
+            "target": "_self"
+        },
         "tags": [
             "Environment"
         ],
@@ -134,9 +167,12 @@
         ]
     },
     {
-        "display": "Budgetly",
+        "title": "Budgetly",
         "description": "Personal finance tracker with smart budgeting and spending analytics.",
-        "url": "/projects/budgetly/",
+        "link": {
+            "url": "/projects/budgetly/",
+            "target": "_self"
+        },
         "tags": [
             "Finance"
         ],
@@ -145,9 +181,12 @@
         ]
     },
     {
-        "display": "LangLearn",
+        "title": "LangLearn",
         "description": "Language learning platform using spaced repetition and gamification.",
-        "url": "/projects/langlearn/",
+        "link": {
+            "url": "/projects/langlearn/",
+            "target": "_self"
+        },
         "tags": [
             "Education"
         ],
@@ -156,9 +195,12 @@
         ]
     },
     {
-        "display": "FileSyncer",
+        "title": "FileSyncer",
         "description": "Sync files between devices automatically using local Wi-Fi connections.",
-        "url": "/projects/filesyncer/",
+        "link": {
+            "url": "/projects/filesyncer/",
+            "target": "_self"
+        },
         "tags": [
             "Files",
             "Sync"
@@ -168,9 +210,12 @@
         ]
     },
     {
-        "display": "MindFlow",
+        "title": "MindFlow",
         "description": "Minimalist journaling tool designed for mindfulness and reflection.",
-        "url": "/projects/mindflow/",
+        "link": {
+            "url": "/projects/mindflow/",
+            "target": "_self"
+        },
         "tags": [
             "Journaling"
         ],
@@ -179,9 +224,12 @@
         ]
     },
     {
-        "display": "DevDash",
+        "title": "DevDash",
         "description": "Customizable developer dashboard that shows commits, PRs, and metrics.",
-        "url": "/projects/devdash/",
+        "link": {
+            "url": "/projects/devdash/",
+            "target": "_self"
+        },
         "tags": [
             "Developer Tools"
         ],
@@ -190,9 +238,12 @@
         ]
     },
     {
-        "display": "PixelPioneer",
+        "title": "PixelPioneer",
         "description": "Retro-style pixel art editor with palette management and animation tools.",
-        "url": "/projects/pixelpioneer/",
+        "link": {
+            "url": "/projects/pixelpioneer/",
+            "target": "_self"
+        },
         "tags": [
             "Art",
             "Design"
@@ -202,9 +253,12 @@
         ]
     },
     {
-        "display": "SoundForge",
+        "title": "SoundForge",
         "description": "Digital audio workstation with layer mixing and live recording support.",
-        "url": "/projects/soundforge/",
+        "link": {
+            "url": "/projects/soundforge/",
+            "target": "_self"
+        },
         "tags": [
             "Audio",
             "Music"
@@ -214,9 +268,12 @@
         ]
     },
     {
-        "display": "QuickTranslate",
+        "title": "QuickTranslate",
         "description": "Offline translation app supporting over 40 languages using AI models.",
-        "url": "/projects/quicktranslate/",
+        "link": {
+            "url": "/projects/quicktranslate/",
+            "target": "_self"
+        },
         "tags": [
             "Translation"
         ],
@@ -225,9 +282,12 @@
         ]
     },
     {
-        "display": "GitTrack",
+        "title": "GitTrack",
         "description": "Monitor and visualize your GitHub contributions and project stats.",
-        "url": "/projects/gittrack/",
+        "link": {
+            "url": "/projects/gittrack/",
+            "target": "_self"
+        },
         "tags": [
             "GitHub",
             "Analytics"
@@ -237,9 +297,12 @@
         ]
     },
     {
-        "display": "LightBoard",
+        "title": "LightBoard",
         "description": "Collaborative online whiteboard with real-time drawing and chat.",
-        "url": "/projects/lightboard/",
+        "link": {
+            "url": "/projects/lightboard/",
+            "target": "_self"
+        },
         "tags": [
             "Collaboration",
             "Education"
@@ -249,9 +312,12 @@
         ]
     },
     {
-        "display": "Planify",
+        "title": "Planify",
         "description": "Advanced project planner with team collaboration and Gantt charts.",
-        "url": "/projects/planify/",
+        "link": {
+            "url": "/projects/planify/",
+            "target": "_self"
+        },
         "tags": [
             "Project Management"
         ],
@@ -260,9 +326,12 @@
         ]
     },
     {
-        "display": "DriveGuard",
+        "title": "DriveGuard",
         "description": "Monitors hard drive health using SMART data and notifies on failure risks.",
-        "url": "/projects/driveguard/",
+        "link": {
+            "url": "/projects/driveguard/",
+            "target": "_self"
+        },
         "tags": [
             "Hardware",
             "Monitoring"
@@ -272,9 +341,12 @@
         ]
     },
     {
-        "display": "Moodify",
+        "title": "Moodify",
         "description": "Mood tracker that uses emojis and graphs to visualize your emotions over time.",
-        "url": "/projects/moodify/",
+        "link": {
+            "url": "/projects/moodify/",
+            "target": "_self"
+        },
         "tags": [
             "Health"
         ],
@@ -283,9 +355,12 @@
         ]
     },
     {
-        "display": "CodeLens",
+        "title": "CodeLens",
         "description": "Instant code search and navigation tool for large repositories.",
-        "url": "/projects/codelens/",
+        "link": {
+            "url": "/projects/codelens/",
+            "target": "_self"
+        },
         "tags": [
             "Developer Tools"
         ],
@@ -294,9 +369,12 @@
         ]
     },
     {
-        "display": "Inkwell",
+        "title": "Inkwell",
         "description": "Distraction-free writing tool for authors and bloggers.",
-        "url": "/projects/inkwell/",
+        "link": {
+            "url": "/projects/inkwell/",
+            "target": "_self"
+        },
         "tags": [
             "Writing"
         ],
@@ -305,9 +383,12 @@
         ]
     },
     {
-        "display": "HomeHub",
+        "title": "HomeHub",
         "description": "Smart home controller that unifies multiple IoT devices in one dashboard.",
-        "url": "/projects/homehub/",
+        "link": {
+            "url": "/projects/homehub/",
+            "target": "_self"
+        },
         "tags": [
             "IoT"
         ],
@@ -316,9 +397,12 @@
         ]
     },
     {
-        "display": "ClipStack",
+        "title": "ClipStack",
         "description": "Clipboard history manager that syncs across all your devices.",
-        "url": "/projects/clipstack/",
+        "link": {
+            "url": "/projects/clipstack/",
+            "target": "_self"
+        },
         "tags": [
             "Utility"
         ],
@@ -327,9 +411,12 @@
         ]
     },
     {
-        "display": "PagePilot",
+        "title": "PagePilot",
         "description": "SEO-friendly static site generator with markdown support.",
-        "url": "/projects/pagepilot/",
+        "link": {
+            "url": "/projects/pagepilot/",
+            "target": "_self"
+        },
         "tags": [
             "Web",
             "SEO"
@@ -339,9 +426,12 @@
         ]
     },
     {
-        "display": "FlowSense",
+        "title": "FlowSense",
         "description": "AI-powered workflow automation for repetitive digital tasks.",
-        "url": "/projects/flowsense/",
+        "link": {
+            "url": "/projects/flowsense/",
+            "target": "_self"
+        },
         "tags": [
             "Automation"
         ],
@@ -350,9 +440,12 @@
         ]
     },
     {
-        "display": "DataPulse",
+        "title": "DataPulse",
         "description": "Lightweight dashboard to visualize real-time sensor or API data.",
-        "url": "/projects/datapulse/",
+        "link": {
+            "url": "/projects/datapulse/",
+            "target": "_self"
+        },
         "tags": [
             "Data",
             "Dashboard"
@@ -362,9 +455,12 @@
         ]
     },
     {
-        "display": "MailCatcher",
+        "title": "MailCatcher",
         "description": "Local email testing tool for developers that simulates mail servers.",
-        "url": "/projects/mailcatcher/",
+        "link": {
+            "url": "/projects/mailcatcher/",
+            "target": "_self"
+        },
         "tags": [
             "Email",
             "Testing"
@@ -374,9 +470,12 @@
         ]
     },
     {
-        "display": "SoundWave",
+        "title": "SoundWave",
         "description": "Online audio visualizer and waveform editor for musicians.",
-        "url": "/projects/soundwave/",
+        "link": {
+            "url": "/projects/soundwave/",
+            "target": "_self"
+        },
         "tags": [
             "Audio"
         ],
@@ -385,9 +484,12 @@
         ]
     },
     {
-        "display": "PixelForge",
+        "title": "PixelForge",
         "description": "3D voxel editor with export options for game engines.",
-        "url": "/projects/pixelforge/",
+        "link": {
+            "url": "/projects/pixelforge/",
+            "target": "_self"
+        },
         "tags": [
             "3D",
             "Art"
@@ -397,9 +499,12 @@
         ]
     },
     {
-        "display": "StudyBuddy",
+        "title": "StudyBuddy",
         "description": "Flashcard app with spaced repetition and progress analytics.",
-        "url": "/projects/studybuddy/",
+        "link": {
+            "url": "/projects/studybuddy/",
+            "target": "_self"
+        },
         "tags": [
             "Education"
         ],
@@ -408,9 +513,12 @@
         ]
     },
     {
-        "display": "ZenFocus",
+        "title": "ZenFocus",
         "description": "Pomodoro timer app designed to improve concentration and productivity.",
-        "url": "/projects/zenfocus/",
+        "link": {
+            "url": "/projects/zenfocus/",
+            "target": "_self"
+        },
         "tags": [
             "Productivity"
         ],
@@ -419,9 +527,12 @@
         ]
     },
     {
-        "display": "QuickServe",
+        "title": "QuickServe",
         "description": "Tiny local HTTP server for testing and file sharing.",
-        "url": "/projects/quickserve/",
+        "link": {
+            "url": "/projects/quickserve/",
+            "target": "_self"
+        },
         "tags": [
             "Server",
             "Utility"
@@ -431,9 +542,12 @@
         ]
     },
     {
-        "display": "MapMate",
+        "title": "MapMate",
         "description": "Offline maps and navigation app for hikers and travelers.",
-        "url": "/projects/mapmate/",
+        "link": {
+            "url": "/projects/mapmate/",
+            "target": "_self"
+        },
         "tags": [
             "Maps"
         ],
@@ -442,9 +556,12 @@
         ]
     },
     {
-        "display": "HexView",
+        "title": "HexView",
         "description": "Advanced hex viewer and binary file editor.",
-        "url": "/projects/hexview/",
+        "link": {
+            "url": "/projects/hexview/",
+            "target": "_self"
+        },
         "tags": [
             "Developer Tools"
         ],
@@ -453,9 +570,12 @@
         ]
     },
     {
-        "display": "LinkVault",
+        "title": "LinkVault",
         "description": "Bookmark manager that organizes and tags your web links.",
-        "url": "/projects/linkvault/",
+        "link": {
+            "url": "/projects/linkvault/",
+            "target": "_self"
+        },
         "tags": [
             "Bookmarks"
         ],
@@ -464,9 +584,12 @@
         ]
     },
     {
-        "display": "StreamWatch",
+        "title": "StreamWatch",
         "description": "App to track your favorite Twitch and YouTube streamers live status.",
-        "url": "/projects/streamwatch/",
+        "link": {
+            "url": "/projects/streamwatch/",
+            "target": "_self"
+        },
         "tags": [
             "Streaming"
         ],
@@ -475,9 +598,12 @@
         ]
     },
     {
-        "display": "DevStats",
+        "title": "DevStats",
         "description": "Simple analytics dashboard for monitoring app performance metrics.",
-        "url": "/projects/devstats/",
+        "link": {
+            "url": "/projects/devstats/",
+            "target": "_self"
+        },
         "tags": [
             "Analytics"
         ],
@@ -486,9 +612,12 @@
         ]
     },
     {
-        "display": "PhotoGrid",
+        "title": "PhotoGrid",
         "description": "Gallery builder that organizes and resizes photos automatically.",
-        "url": "/projects/photogrid/",
+        "link": {
+            "url": "/projects/photogrid/",
+            "target": "_self"
+        },
         "tags": [
             "Photos"
         ],
@@ -497,9 +626,12 @@
         ]
     },
     {
-        "display": "CryptoWatch",
+        "title": "CryptoWatch",
         "description": "Live crypto tracker with charts, portfolio, and alerts.",
-        "url": "/projects/cryptowatch/",
+        "link": {
+            "url": "/projects/cryptowatch/",
+            "target": "_self"
+        },
         "tags": [
             "Crypto",
             "Finance"
@@ -509,9 +641,12 @@
         ]
     },
     {
-        "display": "PulseChat",
+        "title": "PulseChat",
         "description": "Lightweight, decentralized peer-to-peer chat app.",
-        "url": "/projects/pulsechat/",
+        "link": {
+            "url": "/projects/pulsechat/",
+            "target": "_self"
+        },
         "tags": [
             "Messaging"
         ],
@@ -520,9 +655,12 @@
         ]
     },
     {
-        "display": "StockPilot",
+        "title": "StockPilot",
         "description": "Real-time stock tracker with AI-powered prediction charts.",
-        "url": "/projects/stockpilot/",
+        "link": {
+            "url": "/projects/stockpilot/",
+            "target": "_self"
+        },
         "tags": [
             "Finance",
             "AI"
@@ -532,9 +670,12 @@
         ]
     },
     {
-        "display": "Eventify",
+        "title": "Eventify",
         "description": "Event management tool for organizing meetups and conferences.",
-        "url": "/projects/eventify/",
+        "link": {
+            "url": "/projects/eventify/",
+            "target": "_self"
+        },
         "tags": [
             "Events"
         ],
@@ -543,9 +684,12 @@
         ]
     },
     {
-        "display": "CodeSketch",
+        "title": "CodeSketch",
         "description": "Visual pseudocode editor that converts logic to real code.",
-        "url": "/projects/codesketch/",
+        "link": {
+            "url": "/projects/codesketch/",
+            "target": "_self"
+        },
         "tags": [
             "Education",
             "Programming"
@@ -555,9 +699,12 @@
         ]
     },
     {
-        "display": "SleepCycle",
+        "title": "SleepCycle",
         "description": "Smart alarm app that wakes you at the optimal point in your sleep cycle.",
-        "url": "/projects/sleepcycle/",
+        "link": {
+            "url": "/projects/sleepcycle/",
+            "target": "_self"
+        },
         "tags": [
             "Health"
         ],
@@ -566,9 +713,12 @@
         ]
     },
     {
-        "display": "NetProbe",
+        "title": "NetProbe",
         "description": "Network diagnostic tool with ping, traceroute, and speed test features.",
-        "url": "/projects/netprobe/",
+        "link": {
+            "url": "/projects/netprobe/",
+            "target": "_self"
+        },
         "tags": [
             "Networking"
         ],
@@ -577,9 +727,12 @@
         ]
     },
     {
-        "display": "CleanSweep",
+        "title": "CleanSweep",
         "description": "System cleaner and optimizer that removes junk and temporary files.",
-        "url": "/projects/cleansweep/",
+        "link": {
+            "url": "/projects/cleansweep/",
+            "target": "_self"
+        },
         "tags": [
             "System",
             "Utility"

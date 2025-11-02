@@ -8,10 +8,17 @@
     }
 }
 
+@media(max-width: 850px) {
+    td {
+        display: table-row;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --main-fg-color: #C0BAB2;
         --main-bg-color: #202020;
+        --secondary-bg-color: #333;
     }
 }
 
@@ -19,6 +26,7 @@
     :root {
         --main-fg-color: #1e1e1e;
         --main-bg-color: #fff;
+        --secondary-bg-color: #333;
     }
 }
 
@@ -52,31 +60,18 @@ body {
     background-color: var(--main-bg-color);
 }
 
-button {
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    /*text-decoration: none;*/
-    display: block;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
 h1,
+h2,
 i,
 p,
 a,
 td {
     color: var(--main-fg-color);
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 4vw;
 }
 
 a:link,
@@ -103,11 +98,6 @@ a:visited:hover {
 
 #principles i {
     margin-right: 7px;
-}
-
-#principles .description {
-    margin-left: 50px;
-    margin-right: 30px;
 }
 
 #nav-projects {
@@ -154,12 +144,39 @@ a:visited:hover {
     color: var(--main-fg-color);
 }
 
+.description {
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
 .middle {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.download-button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    i {
+        color: white;
+    }
+}
+
+.download-button:hover {
+    background-color: #45a049;
 }
 
 .return {
@@ -189,15 +206,22 @@ a:visited:hover {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    cursor: pointer;
 }
 
-.nav li .active {
-    background-color: #4CAF50 !important;
+.hide {
+    display: none !important;
+}
+
+.nav i {
+    color: white;
 }
 
 .nav li .tab:hover {
     background-color: #414141;
+}
+
+.nav li .active {
+    background-color: #4CAF50 !important;
 }
 
 .nav .right {
@@ -240,34 +264,6 @@ a:visited:hover {
     padding-left: 0px;
 }
 
-.text-align-center {
-    text-align: center;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.align-top {
-    vertical-align: top;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.pt25 {
-    padding-top: 25px;
-}
-
-.pb25 {
-    padding-bottom: 25px;
-}
-
 .force-fg-color {
     color: var(--main-fg-color) !important;
 }
@@ -276,14 +272,24 @@ a:visited:hover {
     color: #8282cd !important;
 }
 
-.pointer {
-    cursor: pointer;
+.picture {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
 }
 
-.size70 {
-    font-size: 70%;
+.results {
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
-.mt100 {
-    margin-top: 100px;
+.pill-label {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: x-small;
+    text-align: center;
+    border-radius: 50px;
 }

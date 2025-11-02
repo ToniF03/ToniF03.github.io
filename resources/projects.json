@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Calcify",
+        "description": "Calcify is a modern, open-source calculator that blends clean design with powerful features like unit conversions, date math, and live currency rates — built for anyone who needs smart, effortless calculations.",
+        "link": {
+            "url": "/projects/calcify/",
+            "target": "_self"
+        },
+        "tags": [
+            "Calculator",
+            "Desktop App",
+            "Math",
+            "Utility",
+            "Currency",
+            "Productivity",
+            "Conversion"
+        ],
+        "language": [
+            "C#"
+        ]
+    }
+]

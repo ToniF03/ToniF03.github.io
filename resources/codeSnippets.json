@@ -1,0 +1,169 @@
+[
+    {
+        "title": "FileEncryption",
+        "link": {
+            "url": "https://www.github.com/ToniF03/Snippets/blob/main/Classes/FileEncryption.cs",
+            "target": "_blank"
+        },
+        "description": "This file provides a static class for encrypting and decrypting strings using AES symmetric encryption. It defines methods to encrypt a plain text string into a byte array and to decrypt a byte array back into a string. The AES key and initialization vector (IV) are hardcoded as string constants and must meet the required lengths (32 characters for the key and 16 for the IV). The implementation uses .NET's `System.Security.Cryptography` library and handles the encryption and decryption in-memory using streams.",
+        "tags": [
+            "Encryption",
+            "AES"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "title": "ExtensionHelper",
+        "link": {
+            "url": "https://www.github.com/ToniF03/Snippets/blob/main/Classes/ExtensionHelper.cs",
+            "target": "_blank"
+        },
+        "description": "This file defines the static class `ExtensionHelper`, which provides methods for registering and unregistering file extensions in the Windows registry for a given application. The class includes methods to associate a file extension with a custom file type, set the default icon, and specify the application that handles the extension. These operations modify the Windows registry to enable custom file associations for desktop applications.",
+        "tags": [
+            "Extension Management",
+            "File Association",
+            "Utility",
+            "Windows"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "title": "MarkovChain",
+        "link": {
+            "url": "https://www.github.com/ToniF03/Snippets/blob/main/Classes/MarkovChain.cs",
+            "target": "_blank"
+        },
+        "description": "This file implements a Markov Chain model for text generation. It includes methods for training the model on a given text corpus and generating new text based on the learned probabilities. The implementation uses a state machine approach to manage the transitions between different states (words or phrases) in the generated text.",
+        "tags": [
+            "Text-Generation",
+            "Markov-Chain"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "title": "Math",
+        "link": {
+            "url": "https://www.github.com/ToniF03/Snippets/blob/main/Classes/Math.cs",
+            "target": "_blank"
+        },
+        "description": "This file implements a comprehensive mathematical and unit conversion library under the uCalc namespace. It provides static classes and enums for converting between different units of measure (such as length, mass, data size, time, temperature, angle, and frequency), as well as methods for converting between numeral systems. It includes a calculator class capable of parsing and evaluating mathematical expressions from strings, supporting operations such as factorial, exponentials, brackets, and arithmetic, using regular expressions for syntax parsing.",
+        "tags": [
+            "Mathematics",
+            "Conversion",
+            "Utility"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "title": "MinHeap",
+        "link": {
+            "url": "https://www.github.com/ToniF03/Snippets/blob/main/Classes/MinHeap.cs",
+            "target": "_blank"
+        },
+        "description": "This file defines a generic MinHeap data structure in C#. The MinHeap class allows for efficient insertion, removal, and retrieval of the minimum element. It uses an array-based implementation to maintain the heap property, where each parent node is less than or equal to its child nodes. The class includes methods for adding elements, removing the minimum element, peeking at the minimum element, and checking if the heap is empty.",
+        "tags": [
+            "Data Structures",
+            "Heap"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "title": "RegistryWatcher",
+        "link": {
+            "url": "https://github.com/ToniF03/Snippets/blob/main/Classes/RegistryWatcher.cs",
+            "target": "_blank"
+        },
+        "description": "This file contains the RegistryWatcher class, which monitors a specific value in a Windows registry key for changes. It uses a dispatcher timer to periodically check the registry value and raises a ValueChanged event when the value is updated. The class provides methods to start and stop the watcher and exposes properties for configuration such as registry key, value name, and polling interval.",
+        "tags": [
+            "Registry",
+            "Monitoring",
+            "Windows"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "title": "ShortcutHelper",
+        "link": {
+            "url": "https://github.com/ToniF03/Snippets/blob/main/Classes/ShortcutHelper.cs",
+            "target": "_blank"
+        },
+        "description": "This file provides classes for working with Windows shortcut (.lnk) files using COM interop. It defines internal native structures and interfaces required to interact with shell url objects, allowing creation, modification, saving, and loading of shortcuts. The Shortcut class wraps these native interfaces to offer easy access to shortcut properties such as path, description, working directory, arguments, hotkey, and methods to resolve and persist shortcut files.",
+        "tags": [
+            "Shortcut",
+            "Windows",
+            "Utility"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "title": "Tokenizer",
+        "link": {
+            "url": "https://github.com/ToniF03/Snippets/blob/main/Classes/Tokenizer.cs",
+            "target": "_blank"
+        },
+        "description": "This file defines the Tokenizer class, which provides configurable methods for splitting input text into tokens (words), tracking unique tokens, and converting between text and token sequences. It supports options for filtering characters, handling punctuation, normalizing case, and limiting the number of tracked words. The class also includes functions to save and load token mappings to and from JSON files.",
+        "tags": [
+            "Tokenizer",
+            "Text Processing",
+            "Configurable",
+            "Utility"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "title": "Unity Pathfinder System",
+        "link": {
+            "url": "https://github.com/ToniF03/Snippets/tree/main/Unity/Pathfinder",
+            "target": "_blank"
+        },
+        "description": "Implements grid-based A* pathfinding for Unity, supporting gravity and jump mechanics. Includes classes for managing the grid, initializing cells, drawing the grid and cells in the editor, and finding optimal paths with customizable movement rules. The system uses a combination of grid management and node-based logic to support complex navigation scenarios in 2D environments.",
+        "tags": [
+            "Pathfinding",
+            "A*",
+            "Grid",
+            "Game Development",
+            "Gravity",
+            "Jump Mechanics"
+        ],
+        "language": [
+            "C#",
+            "Unity"
+        ]
+    },
+    {
+        "title": "TagLibrary (ID3 MP3 Tag Utilities)",
+        "link": {
+            "url": "https://github.com/ToniF03/Snippets/tree/main/Wpf/TagLibrary",
+            "target": "_blank"
+        },
+        "description": "A collection of classes for reading, manipulating, and analyzing ID3 tags in MP3 files. Includes utilities for low-level bit manipulation, handling ID3v1 and ID3v2 tags, extracting metadata such as artist, title, album, year, genre, and cover art, and converting between byte arrays and text. Also provides tools for working with binary data and interpreting tag sizes and flags.",
+        "tags": [
+            "MP3",
+            "ID3",
+            "Audio",
+            "Metadata",
+            "Utility",
+            "Bit Manipulation",
+            "Tagging"
+        ],
+        "language": [
+            "C#"
+        ]
+    }
+]

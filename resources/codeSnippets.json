@@ -70,7 +70,7 @@
         },
         "description": "This file defines a generic MinHeap data structure in C#. The MinHeap class allows for efficient insertion, removal, and retrieval of the minimum element. It uses an array-based implementation to maintain the heap property, where each parent node is less than or equal to its child nodes. The class includes methods for adding elements, removing the minimum element, peeking at the minimum element, and checking if the heap is empty.",
         "tags": [
-            "Data-Structures",
+            "Data Structures",
             "Heap"
         ],
         "language": [
@@ -85,10 +85,9 @@
         },
         "description": "This file contains the RegistryWatcher class, which monitors a specific value in a Windows registry key for changes. It uses a dispatcher timer to periodically check the registry value and raises a ValueChanged event when the value is updated. The class provides methods to start and stop the watcher and exposes properties for configuration such as registry key, value name, and polling interval.",
         "tags": [
-            "registry",
-            "monitoring",
-            "windows",
-            "timer"
+            "Registry",
+            "Monitoring",
+            "Windows"
         ],
         "language": [
             "C#"
@@ -102,9 +101,9 @@
         },
         "description": "This file provides classes for working with Windows shortcut (.lnk) files using COM interop. It defines internal native structures and interfaces required to interact with shell url objects, allowing creation, modification, saving, and loading of shortcuts. The Shortcut class wraps these native interfaces to offer easy access to shortcut properties such as path, description, working directory, arguments, hotkey, and methods to resolve and persist shortcut files.",
         "tags": [
-            "shortcut",
-            "windows",
-            "utility"
+            "Shortcut",
+            "Windows",
+            "Utility"
         ],
         "language": [
             "C#"
@@ -118,10 +117,10 @@
         },
         "description": "This file defines the Tokenizer class, which provides configurable methods for splitting input text into tokens (words), tracking unique tokens, and converting between text and token sequences. It supports options for filtering characters, handling punctuation, normalizing case, and limiting the number of tracked words. The class also includes functions to save and load token mappings to and from JSON files.",
         "tags": [
-            "tokenizer",
-            "text-processing",
-            "configurable",
-            "utility"
+            "Tokenizer",
+            "Text Processing",
+            "Configurable",
+            "Utility"
         ],
         "language": [
             "C#"

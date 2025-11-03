@@ -2,4 +2,18 @@
   // Redirect all 404 requests to index.html
   const path = window.location.pathname;
   window.location.replace(window.location.origin + path);
+
+  async function fetchIndex() {
+    try {
+      const response = await fetch('/index.html');
+      if (response.ok) {
+        const text = await response.text();
+        document.body.innerHTML = text;
+      } else {
+        console.error('Failed to fetch index.html:', response.status);
+      }
+    } catch (error) {
+      console.error('Error fetching index.html:', error);
+    }
+  }
 </script>

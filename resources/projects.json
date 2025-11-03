@@ -18,5 +18,727 @@
         "language": [
             "C#"
         ]
+    },
+    {
+        "title": "NoteHaven",
+        "description": "A sleek note-taking app with markdown support and local encryption for maximum privacy.",
+        "link": {
+            "url": "/projects/notehaven/",
+            "target": "_self"
+        },
+        "tags": [
+            "Notes",
+            "Productivity"
+        ],
+        "language": [
+            "TypeScript"
+        ]
+    },
+    {
+        "title": "TaskPulse",
+        "description": "A smart to-do manager that adapts to your habits and boosts your daily productivity.",
+        "link": {
+            "url": "/projects/taskpulse/",
+            "target": "_self"
+        },
+        "tags": [
+            "To-Do",
+            "AI"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "title": "WeatherLite",
+        "description": "Minimalist weather app using live OpenWeatherMap data with adaptive UI themes.",
+        "link": {
+            "url": "/projects/weatherlite/",
+            "target": "_self"
+        },
+        "tags": [
+            "Weather",
+            "API"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "TrackFit",
+        "description": "TrackFit helps you manage workouts, nutrition, and progress effortlessly.",
+        "link": {
+            "url": "/projects/trackfit/",
+            "target": "_self"
+        },
+        "tags": [
+            "Fitness"
+        ],
+        "language": [
+            "Kotlin"
+        ]
+    },
+    {
+        "title": "Timewise",
+        "description": "Elegant time tracking app designed for freelancers and small teams.",
+        "link": {
+            "url": "/projects/timewise/",
+            "target": "_self"
+        },
+        "tags": [
+            "Time Tracking"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "title": "SnapEdit",
+        "description": "A simple yet powerful photo editor with filters, layers, and AI enhancements.",
+        "link": {
+            "url": "/projects/snapedit/",
+            "target": "_self"
+        },
+        "tags": [
+            "Photo",
+            "Editor"
+        ],
+        "language": [
+            "C++"
+        ]
+    },
+    {
+        "title": "Streamline",
+        "description": "A lightweight media player with plugin support and cross-platform design.",
+        "link": {
+            "url": "/projects/streamline/",
+            "target": "_self"
+        },
+        "tags": [
+            "Media",
+            "Music"
+        ],
+        "language": [
+            "Rust"
+        ]
+    },
+    {
+        "title": "ChromaChat",
+        "description": "Colorful and customizable chat client with end-to-end encryption.",
+        "link": {
+            "url": "/projects/chromachat/",
+            "target": "_self"
+        },
+        "tags": [
+            "Chat",
+            "Messaging"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "Vaultify",
+        "description": "Secure password manager using AES-256 encryption and biometric unlock.",
+        "link": {
+            "url": "/projects/vaultify/",
+            "target": "_self"
+        },
+        "tags": [
+            "Security",
+            "Passwords"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "title": "EcoMeter",
+        "description": "App that tracks your daily carbon footprint and suggests improvements.",
+        "link": {
+            "url": "/projects/ecometer/",
+            "target": "_self"
+        },
+        "tags": [
+            "Environment"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "title": "Budgetly",
+        "description": "Personal finance tracker with smart budgeting and spending analytics.",
+        "link": {
+            "url": "/projects/budgetly/",
+            "target": "_self"
+        },
+        "tags": [
+            "Finance"
+        ],
+        "language": [
+            "Java"
+        ]
+    },
+    {
+        "title": "LangLearn",
+        "description": "Language learning platform using spaced repetition and gamification.",
+        "link": {
+            "url": "/projects/langlearn/",
+            "target": "_self"
+        },
+        "tags": [
+            "Education"
+        ],
+        "language": [
+            "TypeScript"
+        ]
+    },
+    {
+        "title": "FileSyncer",
+        "description": "Sync files between devices automatically using local Wi-Fi connections.",
+        "link": {
+            "url": "/projects/filesyncer/",
+            "target": "_self"
+        },
+        "tags": [
+            "Files",
+            "Sync"
+        ],
+        "language": [
+            "Go"
+        ]
+    },
+    {
+        "title": "MindFlow",
+        "description": "Minimalist journaling tool designed for mindfulness and reflection.",
+        "link": {
+            "url": "/projects/mindflow/",
+            "target": "_self"
+        },
+        "tags": [
+            "Journaling"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "title": "DevDash",
+        "description": "Customizable developer dashboard that shows commits, PRs, and metrics.",
+        "link": {
+            "url": "/projects/devdash/",
+            "target": "_self"
+        },
+        "tags": [
+            "Developer Tools"
+        ],
+        "language": [
+            "React"
+        ]
+    },
+    {
+        "title": "PixelPioneer",
+        "description": "Retro-style pixel art editor with palette management and animation tools.",
+        "link": {
+            "url": "/projects/pixelpioneer/",
+            "target": "_self"
+        },
+        "tags": [
+            "Art",
+            "Design"
+        ],
+        "language": [
+            "C++"
+        ]
+    },
+    {
+        "title": "SoundForge",
+        "description": "Digital audio workstation with layer mixing and live recording support.",
+        "link": {
+            "url": "/projects/soundforge/",
+            "target": "_self"
+        },
+        "tags": [
+            "Audio",
+            "Music"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "title": "QuickTranslate",
+        "description": "Offline translation app supporting over 40 languages using AI models.",
+        "link": {
+            "url": "/projects/quicktranslate/",
+            "target": "_self"
+        },
+        "tags": [
+            "Translation"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "title": "GitTrack",
+        "description": "Monitor and visualize your GitHub contributions and project stats.",
+        "link": {
+            "url": "/projects/gittrack/",
+            "target": "_self"
+        },
+        "tags": [
+            "GitHub",
+            "Analytics"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "LightBoard",
+        "description": "Collaborative online whiteboard with real-time drawing and chat.",
+        "link": {
+            "url": "/projects/lightboard/",
+            "target": "_self"
+        },
+        "tags": [
+            "Collaboration",
+            "Education"
+        ],
+        "language": [
+            "TypeScript"
+        ]
+    },
+    {
+        "title": "Planify",
+        "description": "Advanced project planner with team collaboration and Gantt charts.",
+        "link": {
+            "url": "/projects/planify/",
+            "target": "_self"
+        },
+        "tags": [
+            "Project Management"
+        ],
+        "language": [
+            "Vue"
+        ]
+    },
+    {
+        "title": "DriveGuard",
+        "description": "Monitors hard drive health using SMART data and notifies on failure risks.",
+        "link": {
+            "url": "/projects/driveguard/",
+            "target": "_self"
+        },
+        "tags": [
+            "Hardware",
+            "Monitoring"
+        ],
+        "language": [
+            "Rust"
+        ]
+    },
+    {
+        "title": "Moodify",
+        "description": "Mood tracker that uses emojis and graphs to visualize your emotions over time.",
+        "link": {
+            "url": "/projects/moodify/",
+            "target": "_self"
+        },
+        "tags": [
+            "Health"
+        ],
+        "language": [
+            "Swift"
+        ]
+    },
+    {
+        "title": "CodeLens",
+        "description": "Instant code search and navigation tool for large repositories.",
+        "link": {
+            "url": "/projects/codelens/",
+            "target": "_self"
+        },
+        "tags": [
+            "Developer Tools"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "title": "Inkwell",
+        "description": "Distraction-free writing tool for authors and bloggers.",
+        "link": {
+            "url": "/projects/inkwell/",
+            "target": "_self"
+        },
+        "tags": [
+            "Writing"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "HomeHub",
+        "description": "Smart home controller that unifies multiple IoT devices in one dashboard.",
+        "link": {
+            "url": "/projects/homehub/",
+            "target": "_self"
+        },
+        "tags": [
+            "IoT"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "title": "ClipStack",
+        "description": "Clipboard history manager that syncs across all your devices.",
+        "link": {
+            "url": "/projects/clipstack/",
+            "target": "_self"
+        },
+        "tags": [
+            "Utility"
+        ],
+        "language": [
+            "Kotlin"
+        ]
+    },
+    {
+        "title": "PagePilot",
+        "description": "SEO-friendly static site generator with markdown support.",
+        "link": {
+            "url": "/projects/pagepilot/",
+            "target": "_self"
+        },
+        "tags": [
+            "Web",
+            "SEO"
+        ],
+        "language": [
+            "Go"
+        ]
+    },
+    {
+        "title": "FlowSense",
+        "description": "AI-powered workflow automation for repetitive digital tasks.",
+        "link": {
+            "url": "/projects/flowsense/",
+            "target": "_self"
+        },
+        "tags": [
+            "Automation"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "title": "DataPulse",
+        "description": "Lightweight dashboard to visualize real-time sensor or API data.",
+        "link": {
+            "url": "/projects/datapulse/",
+            "target": "_self"
+        },
+        "tags": [
+            "Data",
+            "Dashboard"
+        ],
+        "language": [
+            "React"
+        ]
+    },
+    {
+        "title": "MailCatcher",
+        "description": "Local email testing tool for developers that simulates mail servers.",
+        "link": {
+            "url": "/projects/mailcatcher/",
+            "target": "_self"
+        },
+        "tags": [
+            "Email",
+            "Testing"
+        ],
+        "language": [
+            "Ruby"
+        ]
+    },
+    {
+        "title": "SoundWave",
+        "description": "Online audio visualizer and waveform editor for musicians.",
+        "link": {
+            "url": "/projects/soundwave/",
+            "target": "_self"
+        },
+        "tags": [
+            "Audio"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "PixelForge",
+        "description": "3D voxel editor with export options for game engines.",
+        "link": {
+            "url": "/projects/pixelforge/",
+            "target": "_self"
+        },
+        "tags": [
+            "3D",
+            "Art"
+        ],
+        "language": [
+            "C++"
+        ]
+    },
+    {
+        "title": "StudyBuddy",
+        "description": "Flashcard app with spaced repetition and progress analytics.",
+        "link": {
+            "url": "/projects/studybuddy/",
+            "target": "_self"
+        },
+        "tags": [
+            "Education"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "title": "ZenFocus",
+        "description": "Pomodoro timer app designed to improve concentration and productivity.",
+        "link": {
+            "url": "/projects/zenfocus/",
+            "target": "_self"
+        },
+        "tags": [
+            "Productivity"
+        ],
+        "language": [
+            "Swift"
+        ]
+    },
+    {
+        "title": "QuickServe",
+        "description": "Tiny local HTTP server for testing and file sharing.",
+        "link": {
+            "url": "/projects/quickserve/",
+            "target": "_self"
+        },
+        "tags": [
+            "Server",
+            "Utility"
+        ],
+        "language": [
+            "Go"
+        ]
+    },
+    {
+        "title": "MapMate",
+        "description": "Offline maps and navigation app for hikers and travelers.",
+        "link": {
+            "url": "/projects/mapmate/",
+            "target": "_self"
+        },
+        "tags": [
+            "Maps"
+        ],
+        "language": [
+            "Kotlin"
+        ]
+    },
+    {
+        "title": "HexView",
+        "description": "Advanced hex viewer and binary file editor.",
+        "link": {
+            "url": "/projects/hexview/",
+            "target": "_self"
+        },
+        "tags": [
+            "Developer Tools"
+        ],
+        "language": [
+            "C"
+        ]
+    },
+    {
+        "title": "LinkVault",
+        "description": "Bookmark manager that organizes and tags your web links.",
+        "link": {
+            "url": "/projects/linkvault/",
+            "target": "_self"
+        },
+        "tags": [
+            "Bookmarks"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "StreamWatch",
+        "description": "App to track your favorite Twitch and YouTube streamers live status.",
+        "link": {
+            "url": "/projects/streamwatch/",
+            "target": "_self"
+        },
+        "tags": [
+            "Streaming"
+        ],
+        "language": [
+            "React"
+        ]
+    },
+    {
+        "title": "DevStats",
+        "description": "Simple analytics dashboard for monitoring app performance metrics.",
+        "link": {
+            "url": "/projects/devstats/",
+            "target": "_self"
+        },
+        "tags": [
+            "Analytics"
+        ],
+        "language": [
+            "TypeScript"
+        ]
+    },
+    {
+        "title": "PhotoGrid",
+        "description": "Gallery builder that organizes and resizes photos automatically.",
+        "link": {
+            "url": "/projects/photogrid/",
+            "target": "_self"
+        },
+        "tags": [
+            "Photos"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "CryptoWatch",
+        "description": "Live crypto tracker with charts, portfolio, and alerts.",
+        "link": {
+            "url": "/projects/cryptowatch/",
+            "target": "_self"
+        },
+        "tags": [
+            "Crypto",
+            "Finance"
+        ],
+        "language": [
+            "Python"
+        ]
+    },
+    {
+        "title": "PulseChat",
+        "description": "Lightweight, decentralized peer-to-peer chat app.",
+        "link": {
+            "url": "/projects/pulsechat/",
+            "target": "_self"
+        },
+        "tags": [
+            "Messaging"
+        ],
+        "language": [
+            "Rust"
+        ]
+    },
+    {
+        "title": "StockPilot",
+        "description": "Real-time stock tracker with AI-powered prediction charts.",
+        "link": {
+            "url": "/projects/stockpilot/",
+            "target": "_self"
+        },
+        "tags": [
+            "Finance",
+            "AI"
+        ],
+        "language": [
+            "C#"
+        ]
+    },
+    {
+        "title": "Eventify",
+        "description": "Event management tool for organizing meetups and conferences.",
+        "link": {
+            "url": "/projects/eventify/",
+            "target": "_self"
+        },
+        "tags": [
+            "Events"
+        ],
+        "language": [
+            "Angular"
+        ]
+    },
+    {
+        "title": "CodeSketch",
+        "description": "Visual pseudocode editor that converts logic to real code.",
+        "link": {
+            "url": "/projects/codesketch/",
+            "target": "_self"
+        },
+        "tags": [
+            "Education",
+            "Programming"
+        ],
+        "language": [
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "SleepCycle",
+        "description": "Smart alarm app that wakes you at the optimal point in your sleep cycle.",
+        "link": {
+            "url": "/projects/sleepcycle/",
+            "target": "_self"
+        },
+        "tags": [
+            "Health"
+        ],
+        "language": [
+            "Swift"
+        ]
+    },
+    {
+        "title": "NetProbe",
+        "description": "Network diagnostic tool with ping, traceroute, and speed test features.",
+        "link": {
+            "url": "/projects/netprobe/",
+            "target": "_self"
+        },
+        "tags": [
+            "Networking"
+        ],
+        "language": [
+            "Go"
+        ]
+    },
+    {
+        "title": "CleanSweep",
+        "description": "System cleaner and optimizer that removes junk and temporary files.",
+        "link": {
+            "url": "/projects/cleansweep/",
+            "target": "_self"
+        },
+        "tags": [
+            "System",
+            "Utility"
+        ],
+        "language": [
+            "C++"
+        ]
     }
 ]

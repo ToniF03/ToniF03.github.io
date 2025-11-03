@@ -7,7 +7,7 @@ async function router() {
     const routes = [
         { path: "/", view: () => fetchContent("/landing.html") },
         { path: "/projects/", view: () => fetchContent("/search/search.html") },
-        { path: "/projects/calcify/", view: () => fetchContent("/projects/calcify/index.html") },
+        { path: "/projects/calcify/", view: () => fetchContent("/projects/calcify/content.html") },
         { path: "/projects/githubStatsDisplay/", view: () => fetchContent("/projects/githubStatsDisplay/index.html") },
         { path: "/snippets/", view: () => fetchContent("/search/search.html") }
     ];

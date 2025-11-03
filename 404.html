@@ -1,18 +1,37 @@
 <script>
-  // Redirect all 404 requests to index.html
-  async function fetchIndex() {
+  // Redirect 404 requests to the site's root index.html and replace the entire document
+  (async function() {
+    const url = '/index.html'; // fetch the website root index.html
     try {
-      const response = await fetch('/index.html');
-      if (response.ok) {
-        const text = await response.text();
-        console.log(text);
-        document.innerHTML = text;
-      } else {
-        console.error('Failed to fetch index.html:', response.status);
+      const res = await fetch(url, { cache: 'no-store' });
+      if (!res.ok) {
+        console.error('Failed to fetch', url, 'status:', res.status);
+        return;
       }
-    } catch (error) {
-      console.error('Error fetching index.html:', error);
+
+      const html = await res.text();
+
+      // Parse fetched HTML so we can ensure a <base> tag exists.
+      // Adding a base tag pointing to the site root (location.origin + '/') makes
+      // relative URLs in the fetched page (CSS, scripts, images, links) resolve correctly
+      // once we replace the document from a 404 path.
+      const parser = new DOMParser();
+      const fetchedDoc = parser.parseFromString(html, 'text/html');
+
+      if (!fetchedDoc.querySelector('base')) {
+        const base = fetchedDoc.createElement('base');
+        base.href = location.origin + '/';
+        const head = fetchedDoc.querySelector('head') || fetchedDoc.documentElement;
+        head.insertBefore(base, head.firstChild);
+      }
+
+      // Serialize and replace the entire current document
+      const serialized = '<!doctype html>\n' + fetchedDoc.documentElement.outerHTML;
+      document.open();
+      document.write(serialized);
+      document.close();
+    } catch (err) {
+      console.error('Error fetching index.html:', err);
     }
-  }
-  fetchIndex();
+  })();
 </script>

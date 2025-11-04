@@ -163,7 +163,8 @@
             "Tagging"
         ],
         "language": [
-            "C#"
+            "C#",
+            "WPF"
         ]
     }
 ]

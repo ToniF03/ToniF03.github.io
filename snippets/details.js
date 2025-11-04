@@ -15,6 +15,7 @@ async function fetchData(file, snippetId) {
     if (response.ok) {
         var dataJS = await response.json();
         displaySnippetDetails(dataJS, snippetId);
+        displaySnippetDetails(dataJS, snippetId);
     } else {
         console.error("Failed to fetch data:", response.status);
     }

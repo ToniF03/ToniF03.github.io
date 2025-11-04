@@ -23,7 +23,7 @@ async function fetchData(file, snippetId) {
 function displaySnippetDetails(data, snippetId) {
     let snippet = null;
     // If the id is a number and exists as index
-    const numeric = Number.parseInt(snippetId);
+    const numeric = Number.parseInt(snippetId, 10);
     if (!Number.isNaN(numeric) && data[numeric]) {
         snippet = data[numeric];
     } else {

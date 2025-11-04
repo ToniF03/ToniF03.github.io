@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "title": "FileEncryption",
         "link": {
             "url": "https://www.github.com/ToniF03/Snippets/blob/main/Classes/FileEncryption.cs",
@@ -15,6 +16,7 @@
         ]
     },
     {
+        "id": 2,
         "title": "ExtensionHelper",
         "link": {
             "url": "https://www.github.com/ToniF03/Snippets/blob/main/Classes/ExtensionHelper.cs",
@@ -32,6 +34,7 @@
         ]
     },
     {
+        "id": 3,
         "title": "MarkovChain",
         "link": {
             "url": "https://www.github.com/ToniF03/Snippets/blob/main/Classes/MarkovChain.cs",
@@ -47,6 +50,7 @@
         ]
     },
     {
+        "id": 4,
         "title": "Math",
         "link": {
             "url": "https://www.github.com/ToniF03/Snippets/blob/main/Classes/Math.cs",
@@ -63,6 +67,7 @@
         ]
     },
     {
+        "id": 5,
         "title": "MinHeap",
         "link": {
             "url": "https://www.github.com/ToniF03/Snippets/blob/main/Classes/MinHeap.cs",
@@ -78,6 +83,7 @@
         ]
     },
     {
+        "id": 6,
         "title": "RegistryWatcher",
         "link": {
             "url": "https://github.com/ToniF03/Snippets/blob/main/Classes/RegistryWatcher.cs",
@@ -94,6 +100,7 @@
         ]
     },
     {
+        "id": 7,
         "title": "ShortcutHelper",
         "link": {
             "url": "https://github.com/ToniF03/Snippets/blob/main/Classes/ShortcutHelper.cs",
@@ -110,6 +117,7 @@
         ]
     },
     {
+        "id": 8,
         "title": "Tokenizer",
         "link": {
             "url": "https://github.com/ToniF03/Snippets/blob/main/Classes/Tokenizer.cs",
@@ -127,6 +135,7 @@
         ]
     },
     {
+        "id": 9,
         "title": "Unity Pathfinder System",
         "link": {
             "url": "https://github.com/ToniF03/Snippets/tree/main/Unity/Pathfinder",
@@ -147,6 +156,7 @@
         ]
     },
     {
+        "id": 10,
         "title": "TagLibrary (ID3 MP3 Tag Utilities)",
         "link": {
             "url": "https://github.com/ToniF03/Snippets/tree/main/Wpf/TagLibrary",

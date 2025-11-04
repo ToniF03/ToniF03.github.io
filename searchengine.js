@@ -27,7 +27,7 @@ function displayData(_data) {
 
         var linkObj = _data[i]["link"] || { url: _data[i]["url"], target: "_self" };
         if (linkObj.target == "_id") {
-            linkObj.url = "/snippets/" + _data[i].id;
+            linkObj.url = "/snippets/" + i;
             linkObj.target = "_self";
         }
 

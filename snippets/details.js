@@ -35,8 +35,8 @@ function displaySnippetDetails(data, snippetId) {
         return;
     }
     // Display snippet details
-    document.querySelector("#snippet-title").textContent = `${snippet.title}`;
-    document.querySelector("#snippet-description").textContent = `${snippet.description}`;
+    document.querySelector("#snippet-title").textContent = snippet.title;
+    document.querySelector("#snippet-description").textContent = snippet.description;
     const container = document.getElementById('code-preview-container');
     if (container) {
         // Clear previous embed if any

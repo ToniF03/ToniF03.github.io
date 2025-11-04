@@ -76,18 +76,11 @@ function reloadScripts() {
     if (!container) return;
     const scripts = container.querySelectorAll("script");
     scripts.forEach(oldScript => {
-        // Avoid re-executing the same script repeatedly
-        if (oldScript.dataset.executed === "true") return;
-
         const newScript = document.createElement("script");
         Array.from(oldScript.attributes).forEach(attr => {
-            if (attr.name !== "data-executed") {
-                newScript.setAttribute(attr.name, attr.value);
-            }
+            newScript.setAttribute(attr.name, attr.value);
         });
         newScript.textContent = oldScript.textContent;
-        // Mark as executed to prevent infinite loops
-        newScript.dataset.executed = "true";
         oldScript.parentNode.replaceChild(newScript, oldScript);
     });
 }

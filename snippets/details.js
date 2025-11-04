@@ -7,14 +7,13 @@ function loadSnippetDetails() {
         return;
     }
     // Fetch snippet data
-    fetchData('codeSnippets.json', snippetId);
+    fetchSnippetData('codeSnippets.json', snippetId);
 }
 
-async function fetchData(file, snippetId) {
+async function fetchSnippetData(file, snippetId) {
     const response = await fetch("/resources/" + file);
     if (response.ok) {
         var dataJS = await response.json();
-        displaySnippetDetails(dataJS, snippetId);
         displaySnippetDetails(dataJS, snippetId);
     } else {
         console.error("Failed to fetch data:", response.status);

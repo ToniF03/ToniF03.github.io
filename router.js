@@ -12,16 +12,36 @@ async function router() {
         { path: "/snippets/", view: () => fetchContent("/search/search.html") }
     ];
 
-    const match = routes.find(r => r.path === location.pathname);
+    // Check for exact route match
+    let match = routes.find(r => r.path === location.pathname);
+    let html;
 
-    if (!match) {
+    if (match) {
+        html = await match.view();
+    } 
+    // Check if it's a snippet detail page (/snippets/something)
+    else if (location.pathname.startsWith("/snippets/") && location.pathname !== "/snippets/") {
+        // Load the same snippet detail HTML file for any snippet ID
+        html = await fetchContent("/snippets/details.html");
+    }
+    // No match found - 404
+    else {
         // Page not found → show 404
         document.querySelector("#content").innerHTML = '<h1>404</h1><h1>I do not know what you were looking for...<br>But I do not think it is here.<br>No worries, you are not lost. You can get back, <a href="/">here</a>.</h1>';
         return;
     }
-
-    const html = await match.view();
     document.querySelector("#content").innerHTML = html;
+
+    // Execute scripts in the loaded HTML
+    const scripts = document.querySelector("#content").querySelectorAll("script");
+    scripts.forEach(oldScript => {
+        const newScript = document.createElement("script");
+        Array.from(oldScript.attributes).forEach(attr => {
+            newScript.setAttribute(attr.name, attr.value);
+        });
+        newScript.textContent = oldScript.textContent;
+        oldScript.parentNode.replaceChild(newScript, oldScript);
+    });
 
     var allActiveTabs = document.querySelectorAll(".active");
     allActiveTabs.forEach(element => {

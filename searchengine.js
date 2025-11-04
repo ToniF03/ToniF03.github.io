@@ -25,10 +25,13 @@ function displayData(_data) {
     for (let i = 0; i < Object.keys(_data).length; i++) {
         var htmlBody = "";
 
-        // Support new schema: link: { url, target } with fallback to legacy url string field
         var linkObj = _data[i]["link"] || { url: _data[i]["url"], target: "_self" };
+        if (linkObj.target == "_id") {
+            linkObj.url = "/snippets/" + i;
+            linkObj.target = "_self";
+        }
 
-        htmlBody += "<div class=\"results\"><a href='" + linkObj.url + "' target='" + linkObj.target + "' " + (linkObj.target == "_blank" ? "" : "data-link") + "><h1>" + _data[i]["title"] + "</h1>" + "<p class=\"description\">" + _data[i]["description"] + "</p>";
+        htmlBody += "<div class=\"results\"><a href='" + linkObj.url + "' target='" + linkObj.target + "' " + (linkObj.target == "_self" ? "data-link" : "") + "><h1>" + _data[i]["title"] + "</h1>" + "<p class=\"description\">" + _data[i]["description"] + "</p>";
 
         var tags = _data[i]["tags"]
         var languages = _data[i]["language"]

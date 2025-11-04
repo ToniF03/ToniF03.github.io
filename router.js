@@ -18,7 +18,7 @@ async function router() {
 
     if (match) {
         html = await match.view();
-    } 
+    }
     // Check if it's a snippet detail page (/snippets/something)
     else if (location.pathname.startsWith("/snippets/") && location.pathname !== "/snippets/") {
         // Load the same snippet detail HTML file for any snippet ID
@@ -33,15 +33,7 @@ async function router() {
     document.querySelector("#content").innerHTML = html;
 
     // Execute scripts in the loaded HTML
-    const scripts = document.querySelector("#content").querySelectorAll("script");
-    scripts.forEach(oldScript => {
-        const newScript = document.createElement("script");
-        Array.from(oldScript.attributes).forEach(attr => {
-            newScript.setAttribute(attr.name, attr.value);
-        });
-        newScript.textContent = oldScript.textContent;
-        oldScript.parentNode.replaceChild(newScript, oldScript);
-    });
+    reloadScripts();
 
     var allActiveTabs = document.querySelectorAll(".active");
     allActiveTabs.forEach(element => {
@@ -58,7 +50,10 @@ async function router() {
     }
     else if (location.pathname.startsWith("/snippets/")) {
         document.querySelector("#nav-snippets-tab").classList.add("active");
-        fetchData("codeSnippets.json");
+        // Only load the list data for the index page, not for /snippets/<id>
+        if (location.pathname === "/snippets/") {
+            fetchData("codeSnippets.json");
+        }
     }
 
     // If a hash is present (e.g., /#about-me), scroll to that section after content loads
@@ -74,6 +69,27 @@ async function router() {
         scrollToTarget();
         requestAnimationFrame(scrollToTarget);
     }
+}
+
+function reloadScripts() {
+    const container = document.querySelector("#content");
+    if (!container) return;
+    const scripts = container.querySelectorAll("script");
+    scripts.forEach(oldScript => {
+        // Avoid re-executing the same script repeatedly
+        if (oldScript.dataset.executed === "true") return;
+
+        const newScript = document.createElement("script");
+        Array.from(oldScript.attributes).forEach(attr => {
+            if (attr.name !== "data-executed") {
+                newScript.setAttribute(attr.name, attr.value);
+            }
+        });
+        newScript.textContent = oldScript.textContent;
+        // Mark as executed to prevent infinite loops
+        newScript.dataset.executed = "true";
+        oldScript.parentNode.replaceChild(newScript, oldScript);
+    });
 }
 
 async function fetchContent(file) {

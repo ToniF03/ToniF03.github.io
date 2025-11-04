@@ -7,7 +7,7 @@ function loadSnippetDetails() {
         return;
     }
     // Fetch snippet data
-    fetchData('codeSnippets.json', snippetId)
+    fetchData('codeSnippets.json', snippetId);
 }
 
 async function fetchData(file, snippetId) {

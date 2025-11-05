@@ -54,14 +54,6 @@ function displayData(_data) {
         resultArea.innerHTML += htmlBody;
         updatePagination();
     }
-
-    // Append router to handle navigation for newly added links
-    resultArea.querySelectorAll("[data-link]").forEach(link => {
-        link.addEventListener("click", e => {
-            e.preventDefault();
-            navigateTo(link.href);
-        });
-    });
 }
 
 function changePage(newPage) {

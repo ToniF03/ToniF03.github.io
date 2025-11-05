@@ -32,8 +32,9 @@ async function router() {
     }
     document.querySelector("#content").innerHTML = html;
 
-    // Reset snippet details loaded flag before reloading scripts
+    // Reset loaded flags before reloading scripts
     window.snippetDetailsLoaded = false;
+    window.markdownLoaded = false;
 
     // Execute scripts in the loaded HTML
     reloadScripts();

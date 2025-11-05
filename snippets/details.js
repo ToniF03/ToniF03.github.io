@@ -1,4 +1,8 @@
 function loadSnippetDetails() {
+    // Prevent duplicate execution
+    if (window.snippetDetailsLoaded) return;
+    window.snippetDetailsLoaded = true;
+    
     // Extract snippet ID from URL
     const pathParts = location.pathname.split('/');
     const snippetId = pathParts.length >= 3 ? decodeURIComponent(pathParts[2]) : null;
@@ -22,14 +26,19 @@ async function fetchSnippetData(file, snippetId) {
 
 function displaySnippetDetails(data, snippetId) {
     let snippet = null;
-    // If the id is a number and exists as index
+    // Convert snippetId to number if it's numeric
     const numeric = Number.parseInt(snippetId, 10);
-    if (!Number.isNaN(numeric) && data[numeric]) {
-        snippet = data[numeric];
-    } else {
-        // Try to find by id or slug field
+    
+    // Try to find by numeric id first, then by other fields
+    if (!Number.isNaN(numeric)) {
+        snippet = data.find?.(s => s.id === numeric);
+    }
+    
+    // If not found by numeric id, try string matching
+    if (!snippet) {
         snippet = data.find?.(s => s.id === snippetId || s.slug === snippetId || s.title === snippetId);
     }
+    
     if (!snippet) {
         document.querySelector("#content").innerHTML += "<p>Error: Snippet not found.</p>";
         return;

@@ -176,5 +176,23 @@
             "C#",
             "WPF"
         ]
+    },
+    {
+        "id": 11,
+        "title": "CSV File Reader and Writer",
+        "link": {
+            "url": "https://github.com/ToniF03/Snippets/blob/main/Classes/CSVFile.cs",
+            "target": "_id"
+        },
+        "description": "This file provides a CSVFile class for reading and writing CSV (Comma-Separated Values) files. It includes methods for loading CSV data into memory, saving data back to CSV format, and manipulating the data as needed. The class supports various options for handling headers, delimiters, and quoting, making it easy to work with CSV files in a flexible way.",
+        "tags": [
+            "CSV",
+            "File I/O",
+            "Data Processing",
+            "Utility"
+        ],
+        "language": [
+            "C#"
+        ]
     }
 ]
